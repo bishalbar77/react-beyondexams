@@ -148,7 +148,7 @@ function  ListUnit({
         <Link
               to={{
                 pathname: `${certificate_link}`,
-              }}
+              }} target="_blank"
               className="c-media__link u-text--small"
             >
           <img
