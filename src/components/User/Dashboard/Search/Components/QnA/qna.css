@@ -1,0 +1,35 @@
+.qna-mid{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding: 13px 0;
+    padding-right: 20px;
+}
+.qna-mid h3{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #101010;
+}
+.qna-mid h5{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #101010;
+    word-break: break-word;
+    white-space: pre-line;
+}
+.qna-mid p{
+font-weight: 600;
+font-size: 12px;
+line-height: 18px;
+color: #6646E7;
+margin-top: 5px;
+}
+.qna-mid p span{
+    color:#686868;
+}

@@ -1,0 +1,39 @@
+.topContainer {
+    padding: 40px clamp(10px, 20vw, 10rem);
+    background: #6646e7;
+}
+
+.topContainer {
+    color: #FFF;
+}
+
+.topContainer h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.topContainer p {
+    width: 80%;
+}
+
+.browsingContent {
+    padding: 40px clamp(10px, 20vw, 10rem);
+}
+
+@media only screen and (max-width: 900px) {
+    .topContainer {
+        padding: 40px clamp(5px, 4vw, 2rem);
+    }
+    
+    .browsingContent {
+        padding: 40px clamp(5px, 4vw, 2rem);
+    }
+
+    .topContainer h1 {
+        font-size: 2rem;
+    }
+    
+    .topContainer p {
+        width: 100%;
+    }
+}

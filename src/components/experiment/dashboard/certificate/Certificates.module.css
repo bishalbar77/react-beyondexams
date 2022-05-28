@@ -1,0 +1,94 @@
+.certificatesHeading {
+    display: flex;
+    padding: 15px;
+}
+
+.certificatesHeading > p {
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #6646E7;
+}
+
+.certificateImage {
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid #E0E0E0;
+}
+
+.certifiedCourse {
+    padding: 10px 25px;
+}
+
+.courseHeading, .courseAchieve {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.courseHeading > h3 {
+    font-size: 15px;
+}
+
+.courseHeading > p {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.courseAchieve > p {
+    font-size: 13px;
+    color: #6646E7;
+}
+
+.socialShare > img {
+   margin-right: 35px;
+   cursor: pointer;
+}
+
+.activityImage {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.activityImage > p {
+    font-size: 11px;
+    color: #848484;
+}
+
+.activityImage > h5 {
+    color: #6646E7;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.relatedCourses {
+    padding: 20px;
+}
+
+.viewCourses {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.viewCourses > p {
+    font-size: 13px;
+    font-weight: 500;
+    color: #6646E7;
+    cursor: pointer;
+}
+
+.courseCard {
+    display: grid;
+    overflow-x: auto;
+    column-gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(185px, 1fr);
+    /* grid-template-columns: repeat(2, 1fr);
+    margin: 0px 6px;
+    width: 100%;
+    overflow-x: scroll; */
+}

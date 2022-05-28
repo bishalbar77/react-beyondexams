@@ -1,0 +1,214 @@
+.goalHeading {
+    display: flex;
+    padding: 15px;
+}
+
+.goalHeading > p {
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #6646E7;
+}
+
+.goalSelect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.goalSelect > h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.goalSelect > h3 > span {
+    color: #6646E7;
+}
+
+.goalSelect > p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #545454;
+}
+
+.goalSelect > h4 {
+    font-size: 18px;
+}
+
+.goalCatagories {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 32px;
+    padding-bottom: 45px;
+}
+
+.goalCatagories > p {
+    font-size: 14px;
+    color: #A6A6A6;
+    cursor: pointer;
+}
+
+.trendBtn, .exploreBtn {
+    text-align: center;
+}
+
+.trendBtn > button {
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 6px 25px;
+    filter: drop-shadow(0px 1.66665px 5.33326px rgba(255, 84, 94, 0.7));
+}
+
+.exploreBtn > button {
+    padding: 8px 28px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6646E7;
+    color: white;
+    cursor: pointer;
+}
+
+.slider {
+    width: 88%;
+    margin: 1rem 0rem 2rem 1.3rem;
+    /* background-color: gray; */
+    height: 250px;
+}
+  
+.slide img {
+    width: 9rem;
+    height: 180px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.slide p {
+    padding: 10px 15px;
+    font-size: 13px;
+    margin-top: -10px;
+    cursor: pointer;
+    width: 115%;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #6646e7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+  
+.slide {
+    transform: scale(0.5);
+    transition: transform 300ms;
+    opacity: 0.8;
+}
+  
+.activeSlide {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.goalImage {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.goalImage > p {
+    font-size: 11px;
+    color: #848484;
+}
+
+.goalBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #C4C4C4;
+    cursor: pointer;
+    margin: 35px 20px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.goalBtn > p {
+    font-size: 18px;
+    color: #838383;
+    margin-left: 20px;
+}
+
+.addBtn {
+    color: #BDBDBD;
+    /* border: 1px solid #838383; */
+    border-radius: 100px;
+    background: #E0E0E0;
+}
+
+.goalSelected {
+    padding: 10px 0px;
+    /* height: 50vh; */
+    margin: 35px 6px;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+}
+
+.goalSteps {
+    padding: 25px 15px;
+    display: flex;
+    /* background-color: lightgray; */
+}
+
+.goalProgress {
+    height: 90px;
+    width: 90px;
+    margin-right: 25px;
+    margin-top: -10px;
+}
+
+.enrolled {
+    display: flex;
+}
+
+.enrolledCourse > h4 {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    margin-left: 10px;
+}
+
+.enrolledCourse > p {
+    font-size: 8px;
+    letter-spacing: 0.05em;
+    margin-top: -2px;
+    margin-left: 10px;
+}
+
+.enrolledCourse > p > span {
+    color: #5978F1;
+}
+
+.watchedVideo, .sharedNotes {
+    display: flex;
+    margin-top: 15px;
+}
+
+.watchedVideo > p, .sharedNotes > p {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin-left: 10px;
+}
+
+.goalProgress > button {
+    padding: 8px 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6646E7;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+

@@ -1,0 +1,74 @@
+.root {
+  margin-bottom: 60px;
+}
+.root > h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+  color: #a38dfc;
+}
+.root > h2 > span {
+  color: black;
+}
+.root > p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+  margin-top: 10px;
+}
+.main {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  justify-content: space-evenly;
+}
+.card {
+  width: 300px;
+  min-height: 219px;
+  position: relative;
+  border-radius: 45px;
+  padding: 50px 30px 10px 30px;
+  margin-top: 70px;
+}
+.cardOne {
+  background: #f1edff;
+}
+.cardTwo {
+  background: #a38dfc;
+}
+.card > h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 132%;
+  text-align: center;
+}
+.card > p {
+  font-size: 13px;
+  line-height: 132%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.cardTwo > p,
+.cardTwo > h3 {
+  color: white;
+}
+.circle {
+  width: 102px;
+  height: 102px;
+  border-radius: 50%;
+  position: absolute;
+  top: -68px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.circleOne {
+  background: linear-gradient(180deg, #a38dfc 0%, #a38dfc 100%);
+}
+.circleTwo {
+  background: linear-gradient(180deg, #f1edff 0%, #f1edff 100%);
+}

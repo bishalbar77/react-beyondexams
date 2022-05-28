@@ -1,0 +1,83 @@
+{
+    "title": {
+        "about": "About",
+        "activity": "Activities",
+        "skills": "Skills",
+        "certificate": "Certificates",
+        "education": "Education",
+        "social": "Social Media Handles",
+        "courses": "User Courses",
+        "bio": "bio",
+        "remove": "remove",
+        "info": "This information will get reflected in your public profile"
+    },
+    "buttons": {
+        "remove": "remove",
+        "save": "Save",
+        "addField": "Add a field",
+        "upload": "Upload",
+        "uploadText": "upload a jpeg, png of your certificate"
+    },
+    "inputLabel": {
+        "dob": "Date of Birth",
+        "location": "Location",
+        "skill": "Skill",
+        "contact": "Contact no.",
+        "certificateName": "Name of the certificate",
+        "organizationName": "Issuing organization",
+        "issuingDate": "Issuing date",
+        "classOrDegree": "Class/Degree",
+        "schoolOrInstitute": "School/Institute",
+        "facebook": "Facebook",
+        "insta": "Instagram",
+        "twitter": "Twitter",
+        "linkedIn": "LinkedIn"
+    },
+    "api": {
+        "countries": "get_all_countries",
+        "userSlug": "get_user_from_slug",
+        "userProfile": "get_user_profile",
+
+        "updateUserProfile": "update_user_profile",
+
+        "updateUserBio": "update_user_bio",
+
+        "updateUserSkill": "update_user_skill",
+        "deleteSkill": "delete_skill?domain_id",
+
+        "addCertificate": "add_user_certificate",
+        "updateCertificate": "update_user_certificate",
+        "deleteCertificate": "delete_certificate?certificate_id",
+        
+        "updateEducation": "update_user_education_standard",
+        "updateEduInstitute": "update_user_education_institute",
+        "deleteEducation": "delete_education?education_id"
+    },
+    "images": {
+        "profileEducation": "profile-education.jpg",
+        "educationWhite": "education_white.svg",
+        "profileAbout": "profile-about.jpg",
+        "profileSkills": "profile-skills.jpg",
+        "profileCertificates": "profile-certificates.jpg",
+        "profileSocial": "profile-social.jpg",
+        "medalWhite": "medal_white.svg",
+        "whiteStar": "whiteStar.svg",
+        "profileInsta": "profile-insta.jpg",
+        "profileFb": "profile-fb.jpg",
+        "profileTwitter": "profile-twitter.jpg",
+        "profileLinkedIn": "profile-linkedin.jpg",
+        "profileEdit": "profile-edit.svg",
+        "profileDOB": "profile-dob.jpg",
+        "location": "profile-location.jpg",
+        "contact": "profile-contact.jpg",
+        "info": "profile-info.jpg",
+        "save": "profile-save.png",
+        "group": "Group_298.png",
+        "add": "profile-plus-circle.jpg",
+        "profileStar": "profile-star.jpg",
+        "certificateIcon": "profile-certificates-one.jpg",
+        "profileUpload": "profile-upload.png",
+        "profileEducationTwo": "profile-education-two.jpg",
+        "logo": "logo.svg"
+    }
+}

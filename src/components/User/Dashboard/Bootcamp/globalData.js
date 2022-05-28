@@ -1,0 +1,10 @@
+export const COURSE_ENROLL_KEYS = 15;
+export const BOOTCAMP_ENROLL_KEYS = 5000;
+export const NOTES_ADDITION_KEYS = 10;
+export const READING_MATERIAL_ADDITION_KEYS = 10;
+export const ANSWER_KEYS = 10;
+export const QUESTION_KEYS = 10;
+export const ADD_COURSE_KEYS = 50;
+export const RATE_KEYS = 5;
+export const PROJECT_ADD_KEYS = 5;
+export const SUMMARISING_VIDEO = 10;

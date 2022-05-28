@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "img": "https://static.wixstatic.com/media/c22c23_43242107a6ca4fe6bb37f0a698754b55~mv2.png/v1/fill/w_155,h_164,al_c,q_85,usm_0.66_1.00_0.01/Artboard%201.webp",
+    "head": "Get jobs easily",
+    "text": "Do our courses, work on real-world projects, get certified! You won't have to find jobs. Jobs will find you!"
+  },
+  {
+    "id": 1,
+    "img": "https://static.wixstatic.com/media/c22c23_43242107a6ca4fe6bb37f0a698754b55~mv2.png/v1/fill/w_155,h_164,al_c,q_85,usm_0.66_1.00_0.01/Artboard%201.webp",
+    "head": "Do real-world projects",
+    "text": "Scoring well in exams is not enough. You need to do projects and have work experience! Get it all at BeyondExams!"
+  },
+  {
+    "id": 2,
+    "img": "https://static.wixstatic.com/media/c22c23_43242107a6ca4fe6bb37f0a698754b55~mv2.png/v1/fill/w_155,h_164,al_c,q_85,usm_0.66_1.00_0.01/Artboard%201.webp",
+    "head": "Expert mentoring",
+    "text": "Learning on your own can be hard. With us, you get mentored from people who are already working in the industry!"
+  },
+  {
+    "id": 3,
+    "img": "https://static.wixstatic.com/media/c22c23_43242107a6ca4fe6bb37f0a698754b55~mv2.png/v1/fill/w_155,h_164,al_c,q_85,usm_0.66_1.00_0.01/Artboard%201.webp",
+    "head": "Up-to-date curriculum",
+    "text": "Schools and colleges have outdated curriculum. Learn in-demand industry skills through our up-to-date certified courses."
+  }
+]

@@ -1,0 +1,12 @@
+.activityChart {
+    /* background-color: yellow; */
+    margin: 20px 15px 35px 15px;
+    /* height: 30vh; */
+    padding: 8px;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.12);
+    border-radius: 13px;
+}
+
+.activityChart > canvas {
+    height: 235px !important;
+}

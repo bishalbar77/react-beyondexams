@@ -1,0 +1,57 @@
+.inviteCard {
+    /* background-color: pink; */
+    padding: 20px 30px;
+    height: 35vh;
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+}
+
+.inviteCardContainer {
+    /* background-color: lightgray; */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.inviteCardContainer > h3 {
+    font-weight: 500;
+    font-size: 24px;
+    color: #6646E8;
+}
+
+
+.inviteCardContainer > p {
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 6px;
+    margin-bottom: 11px;
+}
+
+.inviteContainer {
+    display: flex;
+}
+
+.inviteTshirt {
+    display: flex;
+    align-items: center;
+}
+
+.inviteTshirt > p {
+    font-weight: 400;
+    font-size: 24px;
+    margin-left: 6px;
+}
+
+.inviteBtn {
+    background: #6646E7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 18px;    
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    padding: 10px 60px;
+    margin-top: 25px;
+    margin-right: 20px;
+}

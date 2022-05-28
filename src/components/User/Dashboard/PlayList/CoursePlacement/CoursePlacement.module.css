@@ -1,0 +1,207 @@
+/* .container {
+  
+} */
+
+.titleContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 21px;
+}
+
+.titleContainer > div {
+  color: #1d1d1d;
+  font-size: 24px;
+  font-weight: 700;
+  align-items: center;
+  position: relative;
+}
+
+.titleContainer > div > img {
+  width: 16px;
+  height: 16px;
+  /* margin-top: 10px; */
+  position: absolute;
+  top: 10px;
+  right: -30px;
+}
+
+.textField {
+  border: 1px solid #686868;
+  border-radius: 38px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 900px;
+  max-width: 900px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.textField:focus {
+  border-color: #6646e7;
+}
+
+.CourseClassification {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 25px;
+  border: 1px solid #6646e7;
+}
+
+.CourseClassification div {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 4px 33px;
+  border-radius: 25px;
+  color: #6646e7;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.selected {
+  color: #fff !important;
+  background-color: #6646e7;
+}
+
+.textField > div {
+  font-size: 14px;
+  color: #1d1d1d;
+  font-weight: 400;
+}
+
+.textField > img {
+  height: 14px;
+  width: 14px;
+  margin: 4px 0;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 108px;
+}
+
+.previousButton,
+.nextButton {
+  border: 1px solid #6646e7;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 9px 48px;
+  cursor: pointer;
+  margin: 0 12.5px;
+}
+
+.previousButton {
+  background-color: #fff;
+  color: #6646e7;
+}
+
+.nextButton {
+  color: #fff;
+  background-color: #6646e7;
+}
+
+.slideOut {
+  /* width: 100%;
+  position: absolute;
+  left: -100vw;
+  animation: slide 1s ease; */
+  display: none;
+}
+
+.slideIn {
+  /* position: relative;
+  animation: slideInView 1s ease; */
+  display: block;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  width: 900px;
+  margin: auto;
+  margin-top: 7px;
+}
+
+.error > img {
+  margin-right: 7px;
+  height: 13px;
+}
+
+.error > span {
+  color: #ff0000;
+  font-size: 14px;
+  margin-left: 20px;
+}
+.fit {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100vw;
+  }
+}
+
+@keyframes slideInView {
+  0% {
+    left: -100vw;
+    position: absolute;
+    width: 100%;
+  }
+  100% {
+    left: 0vw;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .textField {
+    max-width: 90vw;
+  }
+
+  .error {
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .titleContainer > div {
+    font-size: 20px;
+  }
+
+  .titleContainer > img {
+    width: 13px;
+    height: 13px;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .CourseClassification {
+    width: 90vw;
+  }
+
+  .CourseClassification > div {
+    width: -webkit-fill-available;
+    text-align: center;
+  }
+
+  .previousButton,
+  .nextButton {
+    font-size: 14px;
+    padding: 6px 20px;
+    margin: 0 5.5px;
+  }
+}

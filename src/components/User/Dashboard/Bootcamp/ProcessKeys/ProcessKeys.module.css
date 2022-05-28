@@ -1,0 +1,227 @@
+.contentWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.dialogStep0 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 75px;
+}
+
+.bgImg {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.keyBox_outer {
+  width: 126px;
+  height: 126px;
+  z-index: 50;
+  margin-top: 68px;
+  background: transparent;
+  border: 2px dashed #5133cc;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.keyBox_mid {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #5133cc;
+  display: grid;
+  place-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.keyBox_inner {
+  width: 80px;
+  height: 80px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  filter: drop-shadow(0px 20px 60px #6646e7);
+  transition: all 0.3s ease-in-out;
+}
+
+.keyImg {
+  width: 48px;
+  right: 0;
+  left: 0;
+  top: 59px;
+  margin: auto;
+  filter: drop-shadow(0px 16px 28px rgba(254, 190, 22, 0.76));
+}
+
+.toPay {
+  margin-top: 32px;
+  font-weight: 500;
+  font-size: 25px;
+  color: #16141f;
+  text-align: center;
+}
+
+.moreInfo {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #5a527a;
+  margin-top: 15px;
+}
+
+.buttonsRow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.mt1 {
+  margin-top: 1rem;
+}
+
+.highlight {
+  color: #5133cc;
+  text-decoration: underline;
+}
+
+.keySystem {
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  color: #16141f;
+  margin-top: 56px;
+  padding-bottom: 10px;
+}
+
+.dialogStep1 {
+  width: 100%;
+  padding: 20px;
+}
+
+.topHeading {
+  width: 100%;
+  background: #efefef;
+  border-radius: 6px;
+  text-align: center;
+  color: #686868;
+  padding: 22px 10px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.keyCenter {
+  display: grid;
+  place-content: center;
+}
+
+.keyBox_outer_larger {
+  width: 264px;
+  height: 264px;
+  border: none;
+}
+
+.keyBox_outer_larger::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px dashed #5133cc;
+  animation: rotate 0.3s linear infinite;
+  z-index: -1;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.keyBox_mid_larger {
+  width: 209.52px;
+  height: 209.52px;
+}
+
+.keyBox_inner_larger {
+  width: 119.01px;
+  height: 119.01px;
+}
+
+.keyImg_larger {
+  width: 96.38px;
+  height: 96.38px;
+  animation: upDown 1.3s linear infinite alternate-reverse;
+}
+
+@keyframes upDown {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+.status {
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #16141f;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 500px) {
+  .dialogStep0 {
+    padding: 0 30px;
+  }
+
+  .keySystem {
+    margin-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .keyBox_outer_larger {
+    width: 200px;
+    height: 200px;
+    border: none;
+  }
+
+  .keyBox_mid_larger {
+    width: 145.52px;
+    height: 145.52px;
+  }
+  
+  .keyBox_inner_larger {
+    width: 99.01px;
+    height: 99.01px;
+  }
+  
+  .keyImg_larger {
+    width: 76.38px;
+    height: 76.38px;
+    animation: upDown 1.3s linear infinite alternate-reverse;
+  }
+}

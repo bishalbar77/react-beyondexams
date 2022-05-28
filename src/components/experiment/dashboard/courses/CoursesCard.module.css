@@ -1,0 +1,44 @@
+.coursesCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px 0px;
+}
+
+.cardProgress {
+    height: 100px;
+    width: 100px;
+    /* flex: 0.5; */
+}
+
+.cardContent {
+    /* background-color: lime; */
+    flex: 0.9;
+}
+
+.cardContentHeading {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cardContentHeading > p {
+    color: #484848;
+    font-weight: 600;
+    font-size: 16px;
+    /* margin-right: 20px; */
+    /* background-color: pink; */
+}
+
+.cardContentDesc {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.cardContentDesc > p {
+    color: #838383;
+    font-size: 12px;
+    margin-left: 10px;
+}

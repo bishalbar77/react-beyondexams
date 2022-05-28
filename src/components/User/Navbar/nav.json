@@ -1,0 +1,58 @@
+{
+    "heading": {
+        "actionItem": "Look what you can do on our website as a"
+    },
+    "toggleBtns": {
+        "student": "Student",
+        "teacher": "Teacher"
+    },
+    "images": {
+        "keyIcon": "key.svg",
+        "relieved": "relieved_laughter.png",
+        "feedback": "feedback.svg"
+    },
+    "buttons": {
+        "badges": "See All Badges",
+        "studentLeaderBoard": "See student leaderboard",
+        "teacherLeaderBoard": "See teacher leaderboard",
+        "courses": "Courses",
+        "involve": "Get Involved",
+        "login": "Log in",
+        "signup": "Sign up",
+        "createCourse": "Create a course"
+    },
+    "dialog": {
+        "title": "Feedback",
+        "contentText": "To submit feedback, please enter the details in below input field.",
+        "actions": {
+            "cancel": "Cancel",
+            "submit": "Submit"
+        }
+    },
+    "profile": {
+        "student": "Student",
+        "teacher": "Teacher",
+        "goToDashboard": "Go to your dashboard",
+        "dashboard": "Dashboard",
+        "profile": "Profile",
+        "maximize": "Maximize",
+        "keys": "Keys available",
+        "unlock": "find out what they unlock",
+        "referFriend": "Refer A Friend",
+        "switchRole": "Switch your role",
+        "videoHistory": "Video History",
+        "createCourse": "Create a course",
+        "helpDesk": "Help desk",
+        "involve": "Get involved"   
+    },
+    "searchInput": {
+        "topSearch": "Top searches",
+        "searchers": "searchers"
+    },
+    "api": {
+        "submitFeedback": "submit_feedback",
+        "topSearchedResults": "get_daily_top_searched_results",
+        "addSearchTerm": "add_search_term",
+        "logout": "logout"
+    }
+}

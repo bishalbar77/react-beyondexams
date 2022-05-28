@@ -1,0 +1,9 @@
+.course_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.course_card {
+  margin: 10px;
+}

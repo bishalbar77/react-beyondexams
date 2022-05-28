@@ -1,0 +1,35 @@
+{
+    "results": {
+        "result": "results",
+        "explore": "explore all",
+        "showMore": "Show more",
+        "answer": "Answer",
+        "notFound": "No results found"
+    },
+    "filter": {
+        "filterBy": "Filter by",
+        "features": "Features",
+        "courses": "Courses",
+        "videos": "Videos",
+        "notes": "Notes",
+        "pdf": "Reading Material",
+        "qa": "Q & A",
+        "level": "Level",
+        "beginner": "Beginner",
+        "intermediate": "Intermediate",
+        "advance": "Advance",
+        "language": "Language",
+        "english": "English"
+    },
+    "tabs": {
+        "all": "All",
+        "courses": "Courses",
+        "videos": "Videos",
+        "notes": "Notes",
+        "pdf": "Reading Material",
+        "qa": "Q & A"
+    },
+    "images": {
+        "filterIcon": "Group-1145.png"
+    }
+}

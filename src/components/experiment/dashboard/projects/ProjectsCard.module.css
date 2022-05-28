@@ -1,0 +1,45 @@
+.projectsCard {
+    /* background-color: pink; */
+    margin: 5px;
+    display: flex;
+    /* justify-content: space-evenly; */
+    padding: 10px 0px;
+}
+
+.cardImage {
+    padding-left: 10px;
+    flex: 0.5;
+}
+
+.cardImage > img {
+    height: 100px;
+    width: 150px;
+    object-fit: cover;
+}
+
+.cardImage > h5 {
+    font-size: 12px;
+}
+
+.cardContent {
+    padding-left: 15px;
+    flex: 0.5;
+}
+
+.cardContent > p {
+    font-size: 12px;
+}
+
+.cardContent > h3 {
+    font-size: 15px;
+}
+
+.cardContent > button {
+    margin-top: 15px;
+    font-size: 12px;
+    background: #6646E7;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 20px;
+    color: white;
+}

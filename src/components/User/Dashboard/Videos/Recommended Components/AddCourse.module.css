@@ -1,0 +1,154 @@
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  width: 885px;
+  border-radius: 20px;
+  overflow: hidden;
+  padding-top: 37px;
+  padding-bottom: 37px;
+}
+
+.title {
+  padding-left: 57px;
+  padding-right: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tool {
+  cursor: pointer;
+}
+
+.content {
+  max-height: 516px;
+  overflow-y: auto;
+  padding-bottom: 15px;
+}
+
+.content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.content::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background: #ddd4fe;
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+  background: #6646e7;
+}
+
+.loader {
+  display: block !important;
+  margin: 50px auto;
+}
+
+.cardContainer {
+  display: grid;
+  gap: 0.5em;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  padding: 0 57px;
+}
+
+.moduleContainer  {
+  padding: 0 57px;
+}
+
+.addModuleButton  {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  background-color: #6646e7 !important;
+  color: #fff !important;
+}
+
+.modules  {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.module {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  border-radius: 10px;
+  background-color: #e7e5f3;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+@media only screen and (max-width: 980px) {
+  .container {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90vw;
+  }
+
+  .title {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .cardContainer {
+    padding: 0 25px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .courseCard {
+    width: 150px !important;
+    height: 270px !important;
+    padding: 7px !important;
+  }
+
+  .bottomClass  {
+    width: 136px !important;
+  }
+
+  .cardContainer {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .courseCard {
+    width: 100% !important;
+    height: 270px !important;
+    padding: 10px !important;
+  }
+
+  .bottomClass  {
+    width: calc(100% - 20px) !important;
+  }
+
+  .cardContainer {
+    grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
+  }
+}
+
+
+@media only screen and (max-height: 666px) {
+  .content {
+    max-height: calc(100vh - 150px);
+  }
+}

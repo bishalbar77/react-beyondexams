@@ -1,0 +1,168 @@
+{
+    "tagline": {
+        "title": "A Non-Profit Organization",
+        "textBold1": "Learn",
+        "textBold2": "Teach",
+        "text1": "anything you want",
+        "text2": "everything you know"
+    },
+    "dropdown": {
+        "title": "Courses",
+        "optionTopics": "Topics",
+        "optionClasses": "Classes"
+    },
+    "buttons": {
+        "goThroughTutorial": "Go through the tutorial",
+        "createCourse": "Create your own course",
+        "share": "Share",
+        "klapz": "klapz",
+        "exploreCourses": "Explore all courses",
+        "exploreAll": "Explore all",
+        "involve": "Get Involved",
+        "meetTeam": "Meet the team",
+        "upload": "Upload",
+        "edit": "Edit"
+    },
+    "homeActivityNode": {
+        "answers": "Questions Answered",
+        "courses": "Courses Created",
+        "notes": "Public Notes",
+        "questions": "Questions Asked",
+        "users": "Total Users"
+    },
+    "sectionHeading": {
+        "howBEHelp": "How Beyond Exams Helps",
+        "collaboration": "Serving students from 50+ universities!",
+        "bestCourses": "Check out some of our best courses",
+        "bestChannel": "Educational Channel of the day",
+        "usersSay": "What our users say about us",
+        "whyBECourses": "Why beyond exams courses?"
+    },
+    "sectionContent": {
+        "helpCardTitle1": "Experienced Teacher",
+        "helpCardTitle2": "Progressive Learning",
+        "helpCardTitle3": "Youtube Videos",
+        "helpCardDesc1": "Experienced, supportive Mentors who are trained to understand some of the problems students face.",
+        "helpCardDesc2": "Our mission is to use our knowledge,skills, and networks to equip people with multiple disadvantages with the skills to gain and sustain employment.",
+        "helpCardDesc3": "High Quality, fun learning coursesmade from youtube rich educational content.",
+        "eduContent": "High Quility Educational content",
+        "progress": "Track Progress",
+        "certificate": "Get Shearchable Certificates.",
+        "exploreChannel": "Explore all Educational Channels",
+        "popularChannel": "Popular video of the channel",
+        "views": "views",
+        "createChange": "Create a change through the things you already know.",
+        "easyCourses1": "Courses are super easy to make, you",
+        "easyCoursesBold": "just need to use youtube rich educational",
+        "easyCourses2": "content to create some meaningful courses.",
+        "vision": "Want to be a part of this change?",
+        "joinUs": "Come and join us."
+    },
+    "footer": {
+        "address": {
+            "line1": "5th floor, SBS Road",
+            "line2": "Jamuna Sagar bldg",
+            "line3": "Opp Sahakari Bhandar",
+            "line4": "Near Sassoon Dock Colaba Bus Depot,",
+            "line5": "Mumbai 400005"
+        },
+        "heading": {
+            "contact": "Contact US",
+            "about": "About US",
+            "resource": "Resources",
+            "updates": "Missed our updates? ",
+            "newsletter": " Join our newsletter"
+        },
+        "linkTitle": {
+            "aboutUs": "About US",
+            "team": "Our team",
+            "contactUs": "Contact US",
+            "involve": "Get Involved",
+            "partner": "Our Partners",
+            "motive": "Why are we doing this?",
+            "adviser": "Board of advisers",
+            "roadmap": "Roadmap",
+            "faq": "FAQ",
+            "privacyPolicy": "Privacy Policy",
+            "subscribe": "Subscribe Now"
+        },
+        "copyright": {
+            "title": "Copyright © 2021, Maslow Initiative. All Rights Reserved",
+            "fundedBy": "Funded by",
+            "fundraiser": "Dr.Aniruddha Malpani"
+        }
+    },
+    "images": {
+        "info": "information.webp",
+        "homeTopIllustration": "home-top-illustration.webp",
+        "help1": "help-1.png",
+        "help2": "help-2.png",
+        "help3": "help-3.png",
+        "relieved": "relieved_laughter.png",
+        "happy": "happy.png",
+        "homeFooterIllustration": "home-footer-illustration-two.webp",
+        "profileUpload": "profile-upload.png",
+        "instagram": "footer-instagram-icon.svg",
+        "facebook": "footer-facebook-icon.svg",
+        "linkedin": "footer-linkedin-icon.svg",
+        "twitter": "footer-twitter-icon.svg",
+        "fire": "Group-928.webp",
+        "track": "Group-932.webp",
+        "party": "Group-933.webp",
+        "teacher": "Frame-259.webp",
+        "curlyArrow": "Vector-111.png",
+        "youtube": "Group-955.webp",
+        "teamFrame": "Frame-258.webp",
+        "klapz": "Group-1190.png",
+        "collaborate1": "collaborate1.png",
+        "collaborate2": "collaborate2.png",
+        "collaborate3": "collaborate3.png",
+        "collaborate4": "collaborate4.png",
+        "collaborate5": "collaborate5.png",
+        "collaborate6": "collaborate6.png",
+        "collaborate7": "collaborate7.png",
+        "collaborate8": "collaborate8.png",
+        "collaborate9": "collaborate9.png",
+        "collaborate10": "collaborate10.png",
+        "collaborate11": "collaborate11.png"
+    },
+    "dialog": {
+        "title": "Want to create your own course?",
+        "content1": "It hardly takes",
+        "content2": "2 minutes",
+        "content3": "to get started!",
+        "actions": {
+            "yes": "YES",
+            "no": "NO"
+        },
+        "share": "Share Channel",
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "linkedin": "LinkedIn",
+        "whatsapp": "whatsapp",
+        "copy": "Copy",
+        "cancel": "cancel"
+    },
+    "api": {
+        "subscribeNewsletter": "https://beyondexamssubstack.herokuapp.com/subscribe?email="
+    },
+    "links": {
+        "testimonial": "https://embed.testimonial.to/w/beyondexams-testimonials?theme=light&card=base",
+        "involveLink": "https://www.notion.so/Beyond-Exams-Wiki-68051f0aa3ad4cd681ec95a113fa92fd",
+        "meetTeamLink": "https://www.notion.so/6643b158b6474bc78e0e59a4fc9ad240?v=95f6979de524478c84df1312c5fb2a8e",
+        "instagram": "https://www.instagram.com/beyondexams/",
+        "facebook": "https://www.facebook.com/LearnwithY",
+        "linkedin": "https://www.linkedin.com/company/learnwithyoutube/",
+        "twitter": "https://twitter.com/Beyondexams_?s=08",
+        "aboutUs": "https://beyondexams.notion.site/About-BeyondExams-34a9555c54504efd9e55f3672715e4dc",
+        "team": "https://www.notion.so/6643b158b6474bc78e0e59a4fc9ad240",
+        "involve": "https://www.notion.so/Beyond-Exams-Wiki-68051f0aa3ad4cd681ec95a113fa92fd",
+        "partner": "https://www.notion.so/learnwithyoutube/Our-partners-b622336907d24cac94f1bb0ac76dd85e",
+        "motive": "https://www.notion.so/learnwithyoutube/Why-are-we-doing-this-28057e1d9538472c84278be23e3e8fee",
+        "adviser": "https://www.notion.so/25b852b57098436cbf3daa90a0223c72?v=caedbc71c54448d78169a08a01e4d64a",
+        "roadmap": "https://www.notion.so/learnwithyoutube/Roadmap-3c2f42d877e64b519a42119aeaef0ecd",
+        "faq": "https://www.notion.so/learnwithyoutube/Frequently-Asked-Questions-b56296fa5a404123801ddd1bcd7912bc",
+        "fundraiser": "https://twitter.com/malpani",
+        "privacyPolicy": "https://docs.google.com/document/d/1_eNr7v4pYKcXeCAJ7DSjaAgdrpLbuBSGrbbz5SHPfQE/edit"
+    }
+}

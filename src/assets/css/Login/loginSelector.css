@@ -1,0 +1,197 @@
+.animation::-webkit-scrollbar {
+  display: none;
+}
+.justify-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login-logo {
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 80px;
+  margin-bottom: 1em;
+  height: 90px;
+  width: 145px;
+}
+.none {
+  display: none;
+}
+
+.SelectorLeftSide {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 3em;
+  width: 100%;
+  padding: 0.5em;
+  text-align: center;
+  box-sizing: border-box;
+}
+.SelectorLoginBTN {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+  background-color: var(--color1);
+  cursor: pointer;
+  padding: 0.3em;
+  font-size: 1.2em;
+  width: 200px;
+  height: 56px;
+  font-weight: bold;
+  color: var(--white);
+  transition: 0.2s;
+  border-radius: 30px;
+  margin-top: 1.2em;
+}
+.SelectorLoginBTN:hover {
+  box-shadow: 0px 18px 56px rgba(102, 70, 231, 0.58);
+}
+.SelectorLoginBTN > div {
+  text-align: left;
+}
+.SelectorLoginBTN:active {
+  transform: scale(0.95);
+}
+
+.btn-selector-p-2 {
+  justify-content: center;
+  display: flex;
+  padding: 0.8em 0;
+  align-items: center;
+  text-align: center;
+}
+.login-anchor {
+  cursor: pointer;
+}
+.login-anchor:hover {
+  text-decoration: underline;
+}
+
+.login-top-section {
+  background-color: var(--white);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 13px 20px;
+}
+.login-top-left {
+  width: 50%;
+  background-color: var(--color1);
+  height: calc(100vh - 30px);
+  min-height: 630px;
+  max-height: 760px;
+  border-radius: 21px 0 0 21px;
+  position: relative;
+}
+.simple-trans-main {
+  width: 100%;
+  height: 100%;
+}
+.simple-trans-main > div {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* left: 20%;
+  top: 18%; */
+}
+
+.login-illus-one-student {
+  width: 400px;
+  align-self: center;
+  position: absolute;
+  top: 140px;
+  left: 15%;
+}
+.login-illus-one-teacher {
+  width: 450px;
+  align-self: center;
+  position: absolute;
+  top: 110px;
+  left: 12%;
+}
+.login-illus-one-parent {
+  width: 350px;
+  align-self: center;
+  position: absolute;
+  top: 140px;
+  left: 15%;
+}
+.login-illus-two {
+  right: -45px;
+  top: 380px;
+  position: absolute;
+  width: 250px;
+}
+.login-top-right {
+  width: 50%;
+  background-color: var(--background);
+  height: calc(100vh - 30px);
+  min-height: 630px;
+  border-radius: 0 21px 21px 0;
+  color: var(--color6);
+  max-height: 760px;
+}
+/* .login-top-right p:nth-child(1) {
+  margin-top: 60px;
+} */
+.login-top-right p:nth-child(4) {
+  font-size: 14px;
+  margin-top: 2em;
+}
+.login-top-right p:nth-child(5) {
+  font-size: 14px;
+  margin-bottom: 8em;
+}
+.login-top-right p:nth-child(6) {
+  color: var(--color1);
+}
+.group-52 {
+  display: none;
+}
+@media (max-width: 1260px) {
+  .login-illus-one-student {
+    left: 7%;
+  }
+  .login-illus-one-teacher {
+    left: 7%;
+  }
+  .login-illus-one-parent {
+    left: 7%;
+  }
+}
+@media (max-width: 1150px) {
+  .login-top-section {
+    padding: 15px 10px;
+  }
+  .login-top-left {
+    display: none;
+  }
+  .login-top-right {
+    width: 100%;
+    height: calc(100vh - 30px);
+    border-radius: 21px 21px 21px 21px;
+    color: var(--color6);
+    max-height: none;
+  }
+  .group-52 {
+    display: block;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+  }
+}
+@media (max-width: 550px) {
+  .login-form {
+    margin-top: -150px;
+  }
+  .login-top-right p:nth-child(5) {
+    font-size: 14px;
+    margin-bottom: 3em;
+  }
+}

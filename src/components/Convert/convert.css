@@ -1,0 +1,25 @@
+.convert-div{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.convert-div div:nth-child(1){
+    width:500px;
+}
+.convert-div-two{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.convert-div-two h3{
+    word-break: break-all;
+}
+@media (max-width:768px){
+    .convert-div-two{
+        flex-direction: column;
+    }
+}

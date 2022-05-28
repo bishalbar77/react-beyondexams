@@ -1,0 +1,149 @@
+:root {
+  --bg-color: #5133cc;
+}
+
+.topContainer {
+  padding: 0 3rem;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.topContainer svg {
+  cursor: pointer;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.quizLoaderWrapper {
+  background-color: #fff;
+  z-index: 105;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quizContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 3rem;
+  margin-bottom: 3rem;
+}
+
+.question {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+
+.optionContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-bottom: 3rem; */
+  gap: 2rem;
+}
+
+.text {
+  margin-top: 1rem;
+  color: var(--bg-color);
+  font-weight: bold;
+}
+
+.continue {
+  border: none;
+  margin-top: 1rem;
+  color: #fff;
+  background: #5133cc;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.optionList li {
+  color: #000;
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  border: 2px solid #ccc;
+  min-width: 3rem;
+  padding: 0.3rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.inputOption {
+  position: absolute;
+  border: 1px solid black;
+  top: 0;
+  left: 0 !important;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  z-index: 10 !important;
+  cursor: pointer;
+}
+
+.optionList li label {
+  display: block;
+  position: relative;
+  font-weight: 300;
+  font-size: 1.35em;
+  z-index: 9;
+  cursor: pointer;
+  transition: all 0.25s linear;
+  text-transform: capitalize;
+}
+
+.optionList li:hover label {
+  color: rgb(90, 90, 90);
+}
+
+.questionInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.questionImg {
+  width: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .optionContainer {
+    flex-direction: column;
+  }
+
+  .question {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .quizContainer {
+    padding: 0 1rem;
+  }
+
+  .topContainer {
+    padding: 0 1rem;
+    margin-top: 3rem;
+  }
+
+  .options {
+    width: 100%;
+  }
+
+  .questionImg {
+    width: 10rem;
+    margin-top: 1rem;
+  }
+}

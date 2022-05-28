@@ -1,0 +1,138 @@
+#landingThree {
+  min-height: 100vh;
+  padding: 1rem;
+  display: grid;
+  width: 100%;
+  overflow: hidden;
+}
+
+#landingThree .container-landing {
+  background-color: var(--background);
+  border-radius: 30px;
+  position: relative;
+  z-index: 10;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+#landingThree .container-landing .container-logo {
+  margin-left: 1rem;
+  margin-top: -1rem;
+}
+
+#landingThree .container-landing .logo {
+  max-width: 150px;
+}
+
+#landingThree .container-landing .content {
+  text-align: center;
+  margin-top: -5rem;
+  position: relative;
+  z-index: 10;
+  padding: 0 2rem;
+}
+
+#landingThree .container-landing .content > h1 {
+  font-size: 36px;
+  max-width: 605px;
+  margin: auto;
+}
+
+#landingThree .container-landing .content > p {
+  padding: 1rem 0;
+  word-spacing: 5px;
+  color: var(--color6);
+}
+
+#landingThree .container-landing .content > a {
+  background: var(--primaryColor);
+  color: white;
+  padding: 1rem 1.3rem;
+  outline: none;
+  border: none;
+  border-radius: 70px;
+  font-size: large;
+  min-width: 201px;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+#landingThree .container-landing .bg-shapes {
+  position: absolute;
+  background: url("./asset/Group\ 930-bg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 15%;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  z-index: -2;
+}
+
+#landingThree .container-landing .image-div {
+  background: url("./asset/Group 1167-sat-bg-2.webp");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: -1rem;
+  min-height: 300px;
+}
+
+@media screen and (max-width: 1200px) {
+  #landingThree .container-landing .image {
+    width: 100%;
+    height: initial;
+  }
+
+  #landingThree .container-landing .content {
+    margin-top: -3rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #landingThree .container-landing .content {
+    margin-top: -1.5rem;
+  }
+
+  #landingThree .container-landing .content > h1 {
+    font-size: 30px;
+  }
+
+  #landingThree .container-landing .content > a {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #landingThree .container-landing .container-logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -0.5rem;
+  }
+
+  #landingThree .container-landing .logo {
+    max-width: 80px;
+  }
+
+  #landingThree .container-landing .content {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  #landingThree .container-landing .content > h1 {
+    font-size: 24px;
+  }
+
+  #landingThree .container-landing .content > a {
+    font-size: small;
+  }
+
+  #landingThree .container-landing .image-div {
+    background-image: url("./asset/Group-1168sat-bg-m-2.webp");
+    margin-bottom: -3rem;
+    background-position: top -2rem;
+  }
+}

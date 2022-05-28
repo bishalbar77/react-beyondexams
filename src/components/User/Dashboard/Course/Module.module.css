@@ -1,0 +1,283 @@
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+  white-space: nowrap;
+  overflow: auto;
+  /* margin-bottom: 35px; */
+  gap: 10px;
+}
+
+.btns > button,
+.btns > a > button,
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 3px 15px;
+  border: 2px solid #6646e8;
+  background-color: transparent;
+  color: #6646e8;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btns > button > p,
+.btns > a > button > p {
+  margin-right: 6px;
+  margin-top: -2px;
+  font-size: 22px;
+  transition: all 300ms ease 0ms;
+}
+
+.btns > button:hover,
+.btns > a > button:hover {
+  color: white;
+  background-color: #6646e8;
+}
+
+.panelActive {
+  max-height: 200px;
+  transition: all 200ms ease 0ms;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  /* background-color: pink; */
+  background: #ffffff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.active p {
+  transform: rotate(45deg);
+  transition: all 300ms ease 0ms;
+}
+
+.scheduleLive {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+}
+
+.scheduleLive > input {
+  height: 40px;
+  padding-left: 10px;
+  width: 50%;
+  border: 1px solid #6646e8;
+  border-radius: 6px;
+}
+
+.scheduleLive > button {
+  padding: 6px 10px;
+  background-color: transparent;
+  color: #6646e8;
+  border: 2px solid #6646e8;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 300ms ease 0ms;
+}
+
+.scheduleLive > button:hover {
+  color: white;
+  background-color: #6646e8;
+  transition: all 300ms ease 0ms;
+}
+
+.scheduleLiveTiming {
+  display: flex;
+  align-items: center;
+}
+
+.scheduleLiveTiming > p {
+  font-size: 10px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.addPdfModule {
+  width: 100% !important;
+  margin-bottom: 0px !important;
+  display: block;
+  padding-right: 120px;
+  /* height: 40px !important; */
+  padding: 10px 1.5px 10px 5px;
+  border: 1px solid #6646e8;
+  border-radius: 5px;
+}
+
+.goLiveInput {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #6646e8;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.goLiveInput > input {
+  height: 40px;
+  border: none;
+  width: 80%;
+  padding-left: 5px;
+  background-color: transparent;
+}
+
+.goLiveInput > button {
+  background-color: #6646e8;
+  border: none;
+  padding: 8px;
+  color: white;
+  border-radius: 5px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+.none {
+  display: none;
+}
+/* .quizInput {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quizInput > input {
+    height: 40px;
+    width: 80%;
+    border: 1px solid #6646E8;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.quizInput > button {
+    padding: 0px 10px;
+    border: 2px solid #6646E8;
+    background-color: transparent;
+
+} */
+
+.pdfTitle {
+  /* background-color: lightgray; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.pdfTitle > h5 {
+  width: 26px;
+  height: 26px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  background-color: #d7d4d4;
+  margin-left: 3px;
+}
+
+.pdfTitle > a,
+.pdfTitle > p {
+  margin-left: 20px;
+}
+
+.pdfTitle > a:hover,
+.pdfTitle > p:hover {
+  color: #6646e8;
+}
+
+.videoDelete {
+  display: none !important;
+}
+
+.pdfTitle:hover .videoDelete {
+  display: inline-block !important;
+}
+
+.actionBox {
+  /* padding-left: 35px;
+  padding-right: 40px; */
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  /* transition: all 80ms ease 0ms; */
+  display: flex;
+  align-items: flex-start;
+  margin-left: 50px;
+  width: 100%;
+  gap: 20px;
+}
+
+.actionBoxActive {
+  max-height: max-content;
+  transition: all 200ms ease 0ms;
+  margin-bottom: 20px;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  border-radius: 10px;
+}
+
+.actionBox > button {
+  height: 30px;
+}
+
+.actionBoxContent {
+  /* flex: 0.8; */
+  flex: 1;
+}
+
+.actionBoxContent > p {
+  font-size: 13px;
+  padding-top: 5px;
+}
+
+.actionBoxContentHeading {
+  display: flex;
+}
+
+.actionBoxContentHeading > h5 {
+  color: #6646e8;
+  margin-right: 10px;
+  font-weight: 400;
+}
+
+.actionBoxBtn {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.actionBoxBtn > p {
+  background: #6646e8;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 18px;
+  cursor: pointer;
+}
+.dropDown {
+  width: auto;
+  z-index: 2;
+  position: relative;
+  justify-content: center;
+  display: flex;
+}
+@media (max-width: 990px) {
+  .btns > button {
+    font-size: 12px;
+    margin-right: 5px;
+  }
+}
+@media (max-width: 600px) {
+  .btns {
+    justify-content: unset;
+  }
+}
+
+@media (max-width: 400px) {
+  .btns > button {
+    font-size: 10px;
+    margin-right: 2px;
+  }
+}

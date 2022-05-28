@@ -1,0 +1,64 @@
+{
+    "footer": {
+        "address": {
+            "line1": "5th floor, SBS Road",
+            "line2": "Jamuna Sagar bldg",
+            "line3": "Opp Sahakari Bhandar",
+            "line4": "Near Sassoon Dock Colaba Bus Depot,",
+            "line5": "Mumbai 400005"
+        },
+        "heading": {
+            "contact": "Contact US",
+            "about": "About US",
+            "resource": "Resources",
+            "updates": "Missed our updates? ",
+            "newsletter": " Join our newsletter"
+        },
+        "linkTitle": {
+            "aboutUs": "About US",
+            "team": "Our team",
+            "contactUs": "Contact US",
+            "involve": "Get Involved",
+            "updates": "Recent Updates",
+            "partner": "Our Partners",
+            "motive": "Why are we doing this?",
+            "adviser": "Board of advisers",
+            "roadmap": "Roadmap",
+            "faq": "FAQ",
+            "privacyPolicy": "Privacy Policy",
+            "subscribe": "Subscribe Now"
+        },
+        "copyright": {
+            "title": "Copyright © 2021, Maslow Initiative. All Rights Reserved",
+            "fundedBy": "Funded by",
+            "fundraiser": "Dr.Aniruddha Malpani"
+        }
+    },
+    "api": {
+        "subscribeNewsletter": "https://beyondexamssubstack.herokuapp.com/subscribe?email="
+    },
+    "images": {
+        "instagram": "footer-instagram-icon.svg",
+        "facebook": "footer-facebook-icon.svg",
+        "linkedin": "footer-linkedin-icon.svg",
+        "twitter": "footer-twitter-icon.svg",
+        "homeFooterIllustration": "home-footer-illustration-two.webp"
+    },
+    "links": {
+        "instagram": "https://www.instagram.com/beyondexams/",
+        "facebook": "https://www.facebook.com/LearnwithY",
+        "linkedin": "https://www.linkedin.com/company/learnwithyoutube/",
+        "twitter": "https://twitter.com/Beyondexams_?s=08",
+
+        "aboutUs": "https://beyondexams.notion.site/About-BeyondExams-34a9555c54504efd9e55f3672715e4dc",
+        "team": "https://www.notion.so/6643b158b6474bc78e0e59a4fc9ad240",
+        "involve": "https://www.notion.so/Beyond-Exams-Wiki-68051f0aa3ad4cd681ec95a113fa92fd",
+        "partner": "https://www.notion.so/learnwithyoutube/Our-partners-b622336907d24cac94f1bb0ac76dd85e",
+        "motive": "https://www.notion.so/learnwithyoutube/Why-are-we-doing-this-28057e1d9538472c84278be23e3e8fee",
+        "adviser": "https://www.notion.so/25b852b57098436cbf3daa90a0223c72?v=caedbc71c54448d78169a08a01e4d64a",
+        "roadmap": "https://www.notion.so/learnwithyoutube/Roadmap-3c2f42d877e64b519a42119aeaef0ecd",
+        "faq": "https://www.notion.so/learnwithyoutube/Frequently-Asked-Questions-b56296fa5a404123801ddd1bcd7912bc",
+        "fundraiser": "https://twitter.com/malpani",
+        "privacyPolicy": "https://docs.google.com/document/d/1_eNr7v4pYKcXeCAJ7DSjaAgdrpLbuBSGrbbz5SHPfQE/edit"
+    }
+}

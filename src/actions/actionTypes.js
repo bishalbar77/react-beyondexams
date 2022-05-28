@@ -1,0 +1,32 @@
+/*auth*/
+export const TOGGLE_AUTHENTICATION = "TOGGLE_AUTHENTICATION";
+export const HANDLE_LOADER = "HANDLE_LOADER";
+/*Videos*/
+export const FETCH_VIDEOS = "FETCH_VIDEOS";
+export const UPDATE_COMPONENT = "UPDATE_COMPONENT";
+export const HANDLE_LIKE = "HANDLE_LIKE";
+export const HANDLE_ANNOTATION_CHANGE = "HANDLE_ANNOTATION_CHANGE";
+export const HANDLE_COMMENT_CHANGE = "HANDLE_COMMENT_CHANGE";
+export const HANDLE_LOAD = "HANDLE_LOAD";
+/*Browse*/
+export const TOGGLE_OPEN = "TOGGLE_OPEN";
+export const SET_CATEGORY = "SET_CATEGORY";
+export const SET_TERM = "SET_TERM";
+export const GET_ALL_CATEGORIES = "GET_ALL_CATEGORIES";
+export const GET_BEST_COURSES = "GET_BEST_COURSES";
+export const GET_BEST_CHANNELS = "GET_BEST_CHANNELS";
+export const GET_USER_BADGES = "GET_USER_BADGES";
+export const GET_ALL_COURSES = "GET_ALL_COURSES";
+export const EXPLORE_COURSES = "EXPLORE_COURSES";
+export const GET_SITE_MATRIX = "GET_SITE_MATRIX";
+export const GET_USER_KEYS = "GET_USER_KEYS";
+// Search
+export const SET_SEARCH_TERM = "SET_SEARCH_TERM";
+export const SET_TERM_VIDEOS = "SET_TERM_VIDEOS";
+
+//Util
+export const SHOW_SUCCESS = "SHOW_SUCCESS";
+export const CLOSE_SUCCESS = "CLOSE_SUCCESS";
+export const SHOW_WARNING = "SHOW_WARNING";
+export const CLOSE_WARNING = "CLOSE_WARNING";
+export const GET_SCHOOL = "GET_SCHOOL";

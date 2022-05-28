@@ -1,0 +1,256 @@
+.container {
+  padding: 2rem clamp(0.5rem, 10vw, 4rem);
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.breadcrumbs p {
+  font-size: 14px;
+  font-weight: normal;
+  color: #686868;
+}
+
+.breadcrumbs img {
+  width: 1rem;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 26px;
+  color: #101010;
+  margin-top: 1rem;
+}
+
+.cirtificateBox {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+.cirtificateLeft {
+  flex: 40%;
+}
+
+.cirtificateRight {
+  flex: 60%;
+}
+
+.cirtificateDetails {
+  background-color: #5133cc;
+  margin-top: 1rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  color: #fff;
+}
+
+.userImgBox {
+  border-radius: 50%;
+  border: 4px solid #fff;
+  flex: 30%;
+  width: 8rem;
+}
+
+.userImgBox img {
+  width: 100%;
+}
+
+.moreDetails {
+  flex: 70%;
+}
+
+.title {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.info {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 0.5rem;
+}
+
+.description {
+  font-weight: normal;
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.courseDetails {
+  display: flex;
+  gap: 1rem;
+  margin-block: 1.5rem;
+}
+
+.courseImg {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 12px 31px rgb(0 0 0 / 14%);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.courseImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.courseInfo h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.courseSkillsBox h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 1.5rem;
+}
+
+.courseSkills {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-block: 1rem;
+}
+
+.courseSkill {
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  background: #5133cc;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.cirtificate {
+  position: relative;
+  background-color: #FFF;
+}
+
+.cirtificate img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.userName {
+  text-transform: uppercase;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 172%;
+}
+
+.courseName {
+  position: absolute;
+  top: 59.7%;
+  left: 34%;
+  font-weight: bold;
+}
+
+.downloadBtn {
+  padding: 10px 15px;
+  color: #5133cc;
+  border: 1px solid #5133cc;
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 1180px) {
+  .courseName {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .cirtificateBox {
+    flex-direction: column;
+  }
+
+  .courseName {
+    font-size: 122%;
+  }
+}
+
+@media (max-width: 880px) {
+  .courseName {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .userName {
+    font-size: 140%;
+  }
+
+  .courseName {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .userName {
+    font-size: 120%;
+  }
+}
+
+@media (max-width: 580px) {
+  .userName {
+    font-size: 90%;
+  }
+
+  .courseName {
+    font-size: 50%;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .info {
+    font-size: 12px;
+  }
+
+  .description {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .userName {
+    font-size: 70%;
+  }
+
+  .courseName {
+    font-size: 30%;
+  }
+
+  .userImgBox {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .userName {
+    font-size: 60%;
+  }
+
+  .courseName {
+    font-size: 20%;
+  }
+}

@@ -1,0 +1,21 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.project_view {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media (max-width: 668px) {
+  .project_view {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .btn {
+    align-self: flex-end;
+  }
+}

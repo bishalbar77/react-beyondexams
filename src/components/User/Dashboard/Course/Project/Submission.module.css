@@ -1,0 +1,72 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.left {
+  display: flex;
+  gap: 15px;
+  color: #686868;
+  max-width: 500px;
+}
+.avatar {
+  position: relative;
+}
+.avatar img {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  border-radius: 50%;
+  z-index: 1;
+}
+.avatar div {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #f1edff;
+  border-radius: 50%;
+  top: -5px;
+  left: -5px;
+}
+.name {
+  font-weight: 500;
+  line-height: 1;
+  margin-top: 5px;
+}
+.name span {
+  font-weight: 400;
+  font-size: 10px;
+}
+.circle {
+  width: 5px;
+  height: 5px;
+  margin-top: 10px;
+  border-radius: 50%;
+  background-color: #686868;
+}
+.project_title {
+  flex: 1;
+}
+.right {
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+}
+.right a {
+  background-color: white;
+  height: 40px;
+  outline: none;
+  border: 1px solid #8a7f7f;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.select {
+  height: 40px;
+  border: 1px solid #8a7f7f;
+  outline: none;
+  border-radius: 10px;
+  overflow: hidden;
+}

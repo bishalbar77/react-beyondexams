@@ -1,0 +1,40 @@
+.history-outer-div {
+  flex: 1;
+  max-width: 100%;
+}
+.history-video-box {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  width: 100%;
+  justify-content: center;
+}
+.history-root {
+  width: 100%;
+}
+.history-heading {
+  margin-top: 40px;
+  text-align: center;
+}
+.commits-list {
+  position: relative;
+  display: block;
+  margin: 30px 0;
+}
+/* .commits-list::-webkit-scrollbar {
+  width: 0;
+  display: none;
+} */
+.history-video-list {
+  position: relative;
+  display: block;
+  margin: 30px 0;
+}
+/* .history-video-list::-webkit-scrollbar {
+  width: 0;
+  display: none;
+} */
+/* .infinite-scroll-component::-webkit-scrollbar {
+  width: 0;
+  display: none;
+} */

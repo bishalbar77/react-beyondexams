@@ -1,0 +1,48 @@
+.translate-root {
+  flex: 1;
+}
+
+.translateLeft,
+.translateRight {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.translate_from,
+.translate_to {
+  margin: 0.5rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .translate-root {
+    padding: 15px 35px;
+    display: flex;
+  }
+  .translate_from,
+  .translate_to {
+    margin: 0.5rem 0;
+  }
+  .translateLeft,
+  .translateRight {
+    margin: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 768px) {
+  .translate-root {
+    padding: 30px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+  .translate-root {
+    padding: 25px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .translate-root {
+    padding: 20px;
+  }
+}

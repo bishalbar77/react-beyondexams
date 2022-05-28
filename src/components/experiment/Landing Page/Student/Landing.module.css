@@ -1,0 +1,255 @@
+.landing {
+  min-height: 100vh;
+  /* padding: 1rem; */
+  display: grid;
+  word-spacing: 5px;
+}
+
+.landing__head {
+  border-radius: 30px;
+  background: var(--background);
+  margin: 1rem;
+  padding: 1rem 1rem 1rem 5vw;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+  align-content: stretch;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.head__left {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.logo {
+  max-width: 150px;
+  margin-top: -2rem;
+}
+
+.head__left .head__content {
+  /* height: 80%; */
+  /* align-self: center; */
+  margin-top: 2rem;
+  z-index: 10;
+}
+
+.head__left .head__content > h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.head__left .head__content > p {
+  max-width: 550px;
+  margin-bottom: 1.5rem;
+}
+
+.head__left .head__content > button {
+  background: var(--primaryColor);
+  color: white;
+  padding: 1rem 1.3rem;
+  outline: none;
+  border: none;
+  border-radius: 70px;
+  font-size: large;
+  min-width: 201px;
+  cursor: pointer;
+  position: relative;
+}
+.head__left .head__content > button::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -40px;
+  right: -50%;
+  overflow: visible;
+  background: url("../asset/Vector\ 111.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.head__right {
+  height: 90%;
+  width: 100%;
+  align-self: center;
+  display: grid;
+}
+
+.head__right .image {
+  object-fit: contain;
+  object-position: center;
+  height: 100%;
+  max-height: 85vh;
+  min-height: 500px;
+  max-width: 100%;
+  justify-self: center;
+}
+
+.shape_image {
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  left: -5%;
+  z-index: -2;
+  right: 0;
+  height: 80%;
+  width: 120%;
+}
+
+.sm_screen {
+  display: none !important ;
+}
+.bg_screen {
+  display: block;
+}
+
+.landing__section {
+  position: relative;
+  padding-bottom: 10px;
+  margin: 1rem;
+  margin-top: 150px;
+  border-radius: 30px;
+  background: var(--background);
+  z-index: 5;
+}
+
+.landing__features__bg {
+  position: inherit;
+  top: -100px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(auto, 250px));
+  place-content: center;
+  column-gap: 2rem;
+}
+.landing__features__sm,
+.landing__features__md {
+  position: inherit;
+  top: -100px;
+  max-width: 80vw;
+  margin: auto;
+  display: none;
+}
+.featureCard {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-rows: 3fr 2fr;
+  place-items: center;
+  padding: 1rem;
+}
+.featureCard.id-0 {
+  background-color: rgb(220, 254, 190);
+}
+.featureCard.id-1 {
+  background-color: rgb(255, 245, 218);
+}
+.featureCard__text {  
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+}
+.section__text {    
+  max-width: 75%;
+  margin: -70px auto 0 auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 910px) {
+  .landing__features__bg,
+  .landing__features__sm {
+    display: none;
+  }
+  .landing__features__md {
+    display: block;
+  }
+  .landing__features__half__md {
+    display: grid !important;
+    place-content: center;
+    grid-template-columns: repeat(2, minmax(auto, 250px));
+    column-gap: 2rem;
+  }
+  .head__left .head__content > h1 {
+    font-size: 1.8rem;
+  }
+
+  .head__left .head__content > p {
+    font-size: 0.8rem;
+  }
+
+  .head__left .head__content > button {
+    font-size: medium;
+  }
+
+  .landing__head {
+    grid-template-columns: 55% 45%;
+    padding-right: 5px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .landing__features__bg,
+  .landing__features__md {
+    display: none;
+  }
+  .landing__features__sm {
+    display: block;
+  }
+  .landing__features__half__sm {
+    display: grid !important;
+    place-content: center;
+    grid-template-columns: minmax(auto, 250px);
+  }
+  .sm_screen {
+    display: grid !important ;
+  }
+  .bg_screen {
+    display: none !important;
+  }
+
+  .landing__head {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 1rem;
+  }
+
+  .container-logo {
+    margin: auto;
+  }
+
+  .logo {
+    max-width: 80px;
+    margin-top: -1.5rem;
+    height: 77px;
+  }
+
+  .head__left .head__content {
+    text-align: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .head__left .head__content > h1 {
+    font-size: 1.4rem;
+  }
+
+  .head__left .head__content > button {
+    font-size: small;
+  }
+  .head__left .head__content > button::after {
+    display: none;
+  }
+  .shape_image {
+    top: 20%;
+    left: 0%;
+    width: 100%;
+  }
+  .footer__heroSection {
+    padding-right: 100px !important;
+  }
+}

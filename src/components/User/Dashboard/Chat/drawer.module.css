@@ -1,0 +1,224 @@
+.root {
+  box-shadow: 0px 4px 5px 2px rgba(0, 0, 0, 0.38);
+  margin: 10px;
+  border-radius: 25px;
+  width: 350px;
+  overflow: auto;
+  color: #686868;
+  animation: mymove 0.2s;
+  overflow-x: hidden;
+}
+.animate {
+  opacity: 0;
+  animation: animate 0.1s forwards;
+  animation-delay: 0.2s;
+}
+@keyframes mymove {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 350px;
+  }
+}
+@keyframes animate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.root::-webkit-scrollbar-thumb {
+  width: 4px;
+  /* background-color: rgba(102, 70, 231, 0.85); */
+  background-color: #febe16;
+  opacity: 0.7;
+  border-radius: 32px;
+  opacity: 0.6;
+}
+.root::-webkit-scrollbar-thumb:hover {
+  opacity: 1;
+  /* background-color: rgb(102, 70, 231, 1); */
+  background-color: #febe16;
+  opacity: 1;
+}
+.root::-webkit-scrollbar {
+  width: 4px;
+}
+.header {
+  display: flex;
+  gap: 5px;
+  color: #7c7c7c;
+  align-items: center;
+  border-bottom: 1px solid rgba(180, 171, 171, 0.66);
+}
+.course {
+  display: flex;
+  flex-direction: column;
+  /* gap: 5px; */
+  align-items: center;
+  margin-top: 10px;
+  border-bottom: 1px solid rgba(180, 171, 171, 0.66);
+  padding: 0 10px;
+  padding-bottom: 10px;
+}
+.course_img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--color1);
+}
+.course h3 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+  text-align: center;
+}
+.course > a {
+  font-size: 13px;
+  margin-top: 3px;
+  /* line-height: 29px; */
+  color: #818181;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.course a:hover {
+  text-decoration: underline;
+}
+.course_creator_img {
+  width: 30px;
+  margin-left: 10px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 0, 0);
+}
+.summary {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  padding: 0 10px;
+  border-bottom: 1px solid rgba(180, 171, 171, 0.66);
+  padding-bottom: 10px;
+}
+.summary h4 {
+  font-weight: 500;
+  line-height: 29px;
+  color: #686868;
+}
+.summary p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #686868;
+  word-break: break-word;
+  white-space: break-spaces;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.showMore {
+  align-self: flex-start;
+  margin-left: -5px;
+}
+.showMoreActive {
+  -webkit-line-clamp: unset;
+}
+.media {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  padding: 0 10px;
+  border-bottom: 1px solid rgba(180, 171, 171, 0.66);
+  padding-bottom: 10px;
+}
+.media h4 {
+  font-weight: 500;
+  line-height: 29px;
+  color: #686868;
+}
+.media_icons {
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+}
+.media_icons img {
+  width: 40px;
+  height: auto;
+}
+.community {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  padding-bottom: 10px;
+}
+.community_header {
+  display: flex;
+  white-space: nowrap;
+  justify-content: space-between;
+  color: #686868;
+  align-items: center;
+}
+.community_header h4 {
+  font-weight: 500;
+  display: flex;
+  gap: 5px;
+  line-height: 29px;
+  color: #686868;
+  font-size: 14px;
+}
+.community_header h4 img {
+  width: 20px;
+  height: auto;
+  object-fit: contain;
+}
+.community_header p {
+  font-size: 12px;
+}
+.users {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 10px;
+}
+.users a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+}
+.users a:hover {
+  text-decoration: underline;
+}
+.users a img {
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--color1);
+  border-radius: 50%;
+}
+@media (max-width: 1080px) {
+  .root {
+    position: fixed;
+    background: white;
+    right: 5px;
+    z-index: 10;
+    padding-bottom: 20px;
+    overflow: auto;
+    overflow-x: hidden;
+    width: calc(100% - 10px);
+    max-width: 350px;
+    height: calc(100vh - 88px);
+    top: 65px;
+    margin: 0;
+    margin-top: 12px;
+  }
+}

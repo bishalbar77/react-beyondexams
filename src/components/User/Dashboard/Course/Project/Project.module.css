@@ -1,0 +1,191 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* height: 25vh; */
+  min-height: 150px;
+  overflow-y: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+  padding-bottom: 20px;
+}
+
+.project_view {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.project_view > p {
+  margin-bottom: 5px;
+  margin-top: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.project_hrLine {
+  margin: 25px;
+  color: whitesmoke;
+}
+
+.project_grades {
+  margin: 25px;
+}
+
+.project_gradesContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project_gradesText {
+  font-size: 14px;
+  flex: 0.5;
+  margin-right: 10px;
+}
+
+.project_gradesInput {
+  flex: 0.5;
+  position: relative;
+  margin-right: 10px;
+}
+
+.bubble {
+  background: #6646e7;
+  color: white;
+  padding: 4px 12px;
+  position: absolute;
+  border-radius: 4px;
+  font-size: 14px;
+  top: 32px;
+  transform: translateX(-50%);
+}
+.bubble::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  font-size: 14px;
+  background: #6646e7;
+  transform: rotate(45deg);
+  top: -4px;
+  left: 42%;
+}
+.bubble::before {
+  content: "passing grade";
+  position: absolute;
+  font-size: 11px;
+  color: black;
+  left: -90px;
+}
+.bubble2 {
+  background: #6646e7;
+  color: white;
+  padding: 4px 12px;
+  position: absolute;
+  border-radius: 4px;
+  font-size: 14px;
+  top: -30px;
+  transform: translateX(-50%);
+}
+.bubble2::after {
+  top: 24px;
+}
+.bubble2::before {
+  content: "your grade";
+  left: -68px;
+}
+.submission_top {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.submission_top p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #000000;
+}
+
+/* ::-webkit-scrollbar {
+  width: 1em;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+} */
+
+.submission {
+  padding: 10px;
+}
+.submission h2 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 45px;
+  color: #5133cc;
+}
+.submission_hero {
+}
+.upload_btn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.check {
+  color: green;
+  width: 15px;
+  height: 15px;
+}
+
+.fileContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  border-radius: 32px;
+  border: 1px solid #6646e7;
+  padding: 11px 20px;
+}
+
+.fileName {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.progressBar {
+  position: relative;
+  min-width: 117px;
+  height: 12px;
+  border-radius: 21px;
+  background-color: #ddd4fe;
+  overflow: hidden;
+}
+
+.progressBar > div {
+  position: absolute;
+  height: inherit;
+  width: 10%;
+  left: 0;
+  background-color: #6646e7;
+  border-radius: 21px;
+  transition: 0.3s;
+}
+
+@media (max-width: 668px) {
+  .project_view {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .btn {
+    align-self: flex-end;
+  }
+}

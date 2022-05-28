@@ -1,0 +1,91 @@
+{
+    "footer": {
+        "info": "Learn how to create meaningful courses",
+        "earn": "Earn",
+        "keys": "bonus keys."
+    },
+    "heading": {
+        "aboutCourse": "Tell us more about the course you are creating.",
+        "create": "I am creating a course for a",
+        "placeCourse": "Place your course in our",
+        "courseStr": "courses Super structure",
+        "moreAboutCourse": "Tell us more about the course you are creating.",
+        "addContent": "You can now start adding content to your course",
+        "addModule": "Add New module",
+        "moduleTitle": "Module Title",
+        "loading": "Loading..."
+    },
+    "label": {
+        "courseName": "Name of the course",
+        "courseDesc": "Description",
+        "level": "Level",
+        "keywords": "Keywords",
+        "thumbnail": "Upload a thumbnail"
+        
+    },
+    "dropdown": {
+        "beginner": "Beginner",
+        "intermediate": "Intermediate",
+        "advance": "Advanced",
+        "alert": "Please select an inner level!",
+        "createCourse": "Create Course here"
+        
+    },
+    "tooltip": {
+        "beginner": "Beginner = Anyone can easily go through the course.",
+        "intermediate": "Intermediate = Some knowledge of the domain is needed for best experience",
+        "expert": "Expert = Your course targets users who are well-versed with the domain"
+        
+    },
+    "buttons": {
+        "next": "Next",
+        "previous": "Previous",
+        "upload": "Upload",
+        "done": "Done",
+        "cancel": "Cancel",
+        "submit": "Submit",
+        "back": "Back",
+        "topic": "Topic",
+        "class": "Class",
+        "close": "Close" 
+    },
+    "stepper": {
+        "step": "Step",
+        "aboutCourse": "About the course",
+        "placement": "Course Placement",
+        "addInfo": "Additional information",
+        "content": "Course Content",
+        "dialog": {
+            "title": "Are you sure you want to exit?",
+            "yes": "Yes",
+            "no": "No",
+            "content": "By exiting you will lose the information entered till now."
+        } 
+    },
+    "images": {
+        "advanced": "advanced.svg",
+        "info": "alert-circle-colored.svg",
+        "info2": "alert-circle.svg",
+        "beginner": "beginner.svg",
+        "intermediate": "intermediate.svg",
+        "profileUpload": "profile-upload.png",
+        "benefitOpenBG": "benefitOpenBG.png",
+        "plusCircle": "plus_circle.png",
+        "arrow": "solid-bottom-arrow.svg",
+        "tick": "tick-plain.svg",
+        "cross": "x-white.svg",
+        "errorIcon": "alert-triangle.svg"
+    },
+    "api": {
+        "addCourse": "add_new_course",
+        "editCourse": "edit_course",
+        "courseDetails": "get_final_course_details",
+        "addModule": "add_new_module",
+        "changeVideoOrder": "change_module_video_ordering",
+        "getAllCourses": "get_all_courses",
+        "courseBreadcrumbs": "get_course_breadcrumbs",
+        "topicBreadcrumbs": "get_topic_breadcrumbs",
+        "removeCatagory": "remove_category"
+    }
+    
+}

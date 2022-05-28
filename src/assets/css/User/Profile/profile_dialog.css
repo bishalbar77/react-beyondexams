@@ -1,0 +1,223 @@
+#skill_dialog -about-dialog h3 {
+  font-weight: 600;
+}
+.p_d_ill {
+  width: 110px;
+  background-color: var(--color1);
+  border-radius: 0 16px 16px 0;
+  padding: 10px 0 0 35px;
+  min-height: 420px;
+}
+.p_d_div {
+  height: 100%;
+}
+.p_d_content {
+  flex: 1;
+  padding: 18px 10px 10px 20px;
+}
+.p_d_content_in {
+  padding-left: 15px;
+  padding-top: 20px;
+}
+.p_d_img {
+  margin-right: 8px;
+  width: 15px;
+  height: 15px;
+}
+.p_d_title {
+  color: var(--color6);
+  font-size: 12px;
+}
+.p_d_remove {
+  margin-left: auto;
+  font-size: 12px;
+  color: rgba(172, 76, 76, 0.7);
+  cursor: pointer;
+}
+.p_d_select {
+  border-radius: 3px;
+  background: #fafafa;
+  border: 1px solid #686868;
+  color: var(--color6);
+  height: 36px;
+  padding-left: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.p_d_width_full {
+  width: 300px;
+}
+.p_d_width_half,
+.p_d_edu_width_half {
+  width: 150px;
+}
+.p_d_width_quarter {
+  width: 75px;
+}
+.p_d_width_one_third {
+  width: 225px;
+}
+.p_d_number {
+  background-color: #d7d4d4;
+  padding-right: 5px;
+  height: 36px;
+  border: 1px solid #686868;
+  width: 60px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  color: black;
+  justify-content: center;
+  margin-right: -2px;
+  z-index: 2;
+}
+.MuiBackdrop-root {
+  background: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(20px) !important;
+}
+.p_d_info {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.p_d_save_btn {
+  width: 110px;
+  height: 40px;
+  padding-top: 10px;
+  padding-right: 4px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  background-color: var(--color1);
+  border-radius: 12px;
+  border: 1px solid #6646e7;
+  font-weight: 600;
+  cursor: pointer;
+}
+.p_d_save_btn:focus,
+.p_d_add_btn:focus {
+  outline: none;
+}
+.p_d_save_btn:active,
+.p_d_add_btn:active {
+  transform: scale(0.95);
+}
+.p_d_add_btn {
+  width: 130px;
+  height: 40px;
+  padding-top: 10px;
+  padding-right: 4px;
+  display: flex;
+  color: var(--color1);
+  justify-content: center;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid #6646e7;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 20px;
+}
+.p_d_add_btn img {
+  margin-top: 1px;
+}
+.p_d_group {
+  position: absolute;
+  left: -135px;
+  top: 187px;
+}
+#p_d_silder .MuiSlider-root {
+  padding: 0;
+  height: 7px;
+}
+#p_d_slider .MuiSlider-rail {
+  height: 7px;
+  border-radius: 5px;
+}
+#p_d_slider .p_d_slider_one .MuiSlider-track {
+  background-color: var(--color1);
+  height: 7px;
+  border-radius: 5px;
+}
+#p_d_slider .MuiSlider-thumb {
+  width: 16px;
+  height: 16px;
+  background-color: var(--color1);
+}
+#p_d_slider .MuiSlider-valueLabel {
+  left: calc(-50% - 17px);
+  color: var(--color1) !important;
+  font-size: 0.58rem;
+  top: -75px;
+}
+#p_d_slider .MuiSlider-valueLabel > span {
+  width: 68px;
+  height: 68px;
+}
+
+.certi-icon {
+  align-self: flex-start;
+}
+.certi-upload {
+  width: 225px;
+  height: 170px;
+  background: #f1edff;
+  border: 2px dashed #6646e7;
+  margin-bottom: 10px;
+}
+.upload-text {
+  margin-top: 10px;
+  color: var(--lightest);
+  text-align: center;
+  padding: 0 15px;
+  font-size: 12px;
+}
+.certi-upload > img {
+  width: 90%;
+  height: 90%;
+}
+.MuiSlider-thumb.Mui-disabled {
+  margin-top: -5px !important;
+}
+.p_d_close {
+  display: none !important;
+}
+.certi_image_edit {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+}
+@media (max-width: 1343.95px) {
+  .MuiDialog-paperWidthLg.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 30px) !important;
+    margin: 20px auto;
+  }
+}
+@media (max-width: 950px) {
+  .p_d_ill {
+    display: none !important;
+  }
+  .p_d_close {
+    display: block !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .p_d_content {
+    padding: 10px 5px 10px 15px;
+  }
+  .p_d_content_in {
+    padding-left: 5px;
+  }
+  .p_d_edu_width_half {
+    width: 125px;
+  }
+  .p_d_width_half {
+    width: 100px;
+  }
+  .p_d_width_full {
+    width: 250px;
+  }
+  .p_d_width_quarter {
+    width: 65px;
+  }
+}

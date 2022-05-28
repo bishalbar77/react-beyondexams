@@ -1,0 +1,152 @@
+.container {
+  /* display: none; */
+  padding-top: 52px;
+}
+
+slideIn {
+  /* left: 0;
+    animation: shiftIn 1s ease;
+    position: relative; */
+  display: block;
+}
+
+.slideOut {
+  /* display: none; */
+  /* position: absolute;
+    width: 100%;
+    animation: shiftOut 1s ease; */
+  display: none;
+}
+
+.content {
+  max-width: 447px;
+  margin: auto;
+}
+
+.title {
+  color: #1d1d1d;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.inputContainer {
+  margin-top: 30px;
+}
+
+.label {
+  display: flex;
+  color: #686868;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.label > span {
+  color: #dd0000;
+}
+
+.label > img {
+  margin-left: 11px;
+}
+
+.textField,
+.selectInput {
+  margin-top: 8px;
+  background: #fafafa;
+  border: 1px solid #686868;
+  border-radius: 38px;
+  width: 100%;
+  padding: 8.5px 15px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1d1d1d;
+}
+.fit {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.textArea {
+  outline: none;
+  border-radius: 20px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  resize: none;
+}
+
+.textField:focus {
+  border-color: #6646e7;
+}
+
+.textArea:focus {
+  border-color: #6646e7;
+}
+
+.textArea::-webkit-scrollbar {
+  display: none;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 108px;
+}
+
+.previousButton,
+.nextButton {
+  /* border: 1px solid #6646e7; */
+  border: none;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 9px 48px;
+  cursor: pointer;
+  margin: 0 12.5px;
+}
+
+.previousButton {
+  background-color: #fff;
+  color: #6646e7;
+}
+
+.nextButton {
+  color: #fff;
+  background-color: #6646e7;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+}
+
+.error > img {
+  margin-right: 7px;
+  height: 13px;
+}
+
+.error > span {
+  color: #ff0000;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  .content {
+    max-width: 447px;
+    padding: 0 10px;
+  }
+
+  .buttonContainer {
+    margin-top: 70px;
+  }
+
+  .previousButton,
+  .nextButton {
+    border-radius: 40px;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 6px 20px;
+    cursor: pointer;
+    margin: 0 7px;
+  }
+}

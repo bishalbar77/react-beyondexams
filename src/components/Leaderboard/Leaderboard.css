@@ -1,0 +1,669 @@
+:root {
+	
+}
+
+.Leaderboard-main {
+    --black: #000000;
+	--white: #ffffff;
+	--darkest: #101010;
+	--darker: #16171A;
+	--dark: #A3AFBF;
+	--medium: #DFE7EF;
+	--light: #CAD4E1;
+	--lighter: #F5F8FC;
+	--lightest: var(--white);
+	--primary: #7B16FF;
+	--primary-light: #DDD9FF;
+	--primary-trans: rgba(123, 22, 255, 0.4);
+	--yellow: #FDCB6E;
+	--orange: #E17055;
+	--teal: #00CEC9;
+	--bg: var(--darkest);
+	--color: var(--lightest);
+	--surface: var(--darker);
+
+
+    width: 100%;
+    font-size: 16px;
+    color: var(--color5);
+}
+
+.Leaderboard-main h1, .Leaderboard-main h2, .Leaderboard-main h3, .Leaderboard-main h4, .Leaderboard-main h5, .Leaderboard-main h6 {
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	margin-top: 0.8em;
+	margin-bottom: 0.8em;
+}
+
+
+.Leaderboard-main a {
+	color: var(--primaryColor);
+	text-decoration: none;
+	transition: all 120ms ease-out 0s;
+	display: inline-block;
+	border-radius: 0.4em;
+}
+
+.Leaderboard-main a:hover {
+	background: var(--primaryColor);
+	color: var(--primary-light);
+	box-shadow: 0px 0px 0px 0.4em var(--primaryColor);
+}
+
+.Leaderboard-main button, .Leaderboard-main textarea, .Leaderboard-main input, .Leaderboard-main select {
+	font-family: inherit;
+	color: inherit;
+}
+
+.Leaderboard-main button:active, .Leaderboard-main button:focus, .Leaderboard-main textarea:active, .Leaderboard-main textarea:focus, .Leaderboard-main input:active, .Leaderboard-main input:focus, .Leaderboard-main select:active, .Leaderboard-main select:focus {
+	outline: 0;
+}
+
+.Leaderboard-main button, .Leaderboard-main select {
+	cursor: pointer;
+}
+
+
+.Leaderboard-main .l-wrapper {
+	width: 80%;
+	/* max-width: 960px; */
+	margin: auto;
+	padding: 1.6em 1.6em 3.2em;
+}
+
+@media screen and (max-width: 640px){
+	.Leaderboard-main {
+		font-size: 10px;
+	}
+
+	.Leaderboard-main .l-wrapper{
+		width: 95%;
+	}
+}
+@media screen and (min-width:640px) and (max-width: 800px){
+	.Leaderboard-main {
+		font-size: 14px;
+	}
+}
+
+.Leaderboard-main .l-grid {
+	/* display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-column-gap: 1.6em;
+	grid-row-gap: 1.6em; */
+	position: relative;
+}
+
+@media screen and (max-width: 700px) {
+	.Leaderboard-main .l-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+.Leaderboard-main .c-header {
+	padding: 1.6em 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2.4em;
+	position: relative;
+}
+
+.Leaderboard-main .c-header:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 0.2em;
+	background: linear-gradient(90deg, rgba(175,173,173,0) 0%, rgba(175,173,173,1) 50%, rgba(175,173,173,0) 100%);
+}
+
+.Leaderboard-main .c-title{
+	color: var(--primaryColor);
+	text-align: center;
+	font-weight: 700;
+	width: 100%;
+}
+
+.Leaderboard-main .c-card {
+	border-radius: 0.8em;
+	background: var(--background);
+	width: 100%;
+	margin-bottom: 1.6em;
+	box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.12);
+}
+
+.Leaderboard-main .c-card__body, .Leaderboard-main .c-card__header {
+	padding: 2.4em;
+}
+
+@media screen and (max-width: 700px) {
+	.Leaderboard-main .c-card__body, .Leaderboard-main .c-card__header {
+		padding: 1.2em;
+	}
+}
+
+.Leaderboard-main .c-card__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 0;
+}
+
+@media screen and (max-width: 700px) {
+	.Leaderboard-main .c-card__header {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.Leaderboard-main .c-place {
+		transform: translateY(4px);
+	}
+}
+
+.Leaderboard-main .c-logo {
+	display: inline-block;
+	width: 100%;
+	max-width: 17.6em;
+	user-select: none;
+}
+
+.Leaderboard-main .c-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.Leaderboard-main .c-list__item {
+	padding: 1.6em 0;
+}
+
+.Leaderboard-main .c-list__item .c-flag {
+	margin-top: 0.8em;
+}
+
+@media screen and (max-width: 700px) {
+	.Leaderboard-main .c-list__item .c-flag {
+		margin-top: 0.4em;
+	}
+}
+
+.Leaderboard-main .c-list__grid {
+	display: grid;
+	grid-template-columns: 4.8em 3fr 1fr 1fr 1fr 1fr;
+	grid-column-gap: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+	.Leaderboard-main .c-list__grid {
+		grid-template-columns: 3.2em 3fr 1fr 1fr 1fr 1fr;
+		grid-column-gap: 0.8em;
+	}
+}
+
+.Leaderboard-main .c-media {
+	display: inline-flex;
+	align-items: center;
+}
+
+.Leaderboard-main .c-media__content {
+	padding-left: 1.6em;
+}
+
+@media screen and (max-width: 700px) {
+	.Leaderboard-main .c-media__content {
+		padding-left: 0.8em;
+	}
+}
+
+.Leaderboard-main .c-media__title {
+	/* margin-bottom: 0.4em; */
+}
+
+/* @media screen and (max-width: 700px) {
+	.Leaderboard-main .c-media__title {
+		font-size: 1.4em;
+	}
+} */
+
+.Leaderboard-main .c-avatar {
+	display: inline-flex;
+	align-self: flex-start;
+	justify-content: center;
+	width: 3.2em;
+	height: 3.2em;
+	box-shadow: inset 0px 0px 0px 1px currentColor;
+	border-radius: 50%;
+	background: var(--lightest);
+	color: var(--dark);
+}
+
+@media screen and (max-width: 700px) {
+	.Leaderboard-main .c-avatar {
+		width: 3.2em;
+		height: 3.2em;
+	}
+}
+
+.Leaderboard-main .c-avatar--lg {
+	width: 9.6em;
+	height: 9.6em;
+}
+
+.Leaderboard-main .c-button {
+	display: inline-block;
+	background: var(--dark);
+	border: 0;
+	border-radius: 0.4em;
+	padding: 1.2em 2em;
+	transition: all 120ms ease-out 0s;
+}
+
+.Leaderboard-main .c-button--block {
+	display: block;
+	width: 100%;
+}
+
+.Leaderboard-main .c-button:hover, .Leaderboard-main .c-button:focus {
+	filter: brightness(0.9);
+}
+
+/* .Leaderboard-main .c-button:focus {
+	box-shadow: 0px 0px 0px 0.4em var(--primary-trans);
+}
+
+.Leaderboard-main .c-button:active {
+	box-shadow: 0px 0px 0px 0.4em var(--primary-trans), inset 0px 0px 0.8em rgba(0, 0, 0, 0.2);
+	filter: brightness(0.8);
+} */
+
+.Leaderboard-main .c-select {
+	background: transparent;
+	padding: 1.2em;
+	appearance: none;
+	font-size: 1.4em;
+	border-color: rgba(255, 255, 255, 0.2);
+	transition: all 120ms ease-out 0s;
+}
+
+.Leaderboard-main .c-select:hover {
+	background: var(--darkest);
+}
+
+.Leaderboard-main .c-flag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 3.2em;
+	height: 3.2em;
+	/* background: var(--lightest); */
+	color: var(--color6);
+	border-radius: 0.4em;
+}
+
+@media screen and (max-width: 700px) {
+	.Leaderboard-main .c-flag {
+		width: 2.4em;
+		height: 2.4em;
+	}
+}
+
+.Leaderboard-main .c-button--light {
+	background: var(--lightest);
+}
+
+.Leaderboard-main .c-button--primary {
+	background: var(--primary);
+}
+
+.Leaderboard-main .c-button--dark {
+	background: var(--darkest);
+}
+
+.Leaderboard-main .c-button--transparent {
+	background: transparent;
+}
+
+.Leaderboard-main .c-button--medium {
+	background: var(--medium);
+}
+
+.Leaderboard-main .c-button--yellow {
+	background: var(--yellow);
+}
+
+.Leaderboard-main .c-button--orange {
+	background: var(--orange);
+}
+
+.Leaderboard-main .c-button--teal {
+	background: var(--teal);
+}
+
+.Leaderboard-main .c-button--light-gradient {
+	background: linear-gradient(to top, var(--light), var(--lightest));
+}
+
+.Leaderboard-main .u-text--title {
+	font-family: 'Oswald', system-ui;
+}
+
+.Leaderboard-main .u-text--left {
+	text-align: left;
+}
+
+.Leaderboard-main .u-text--center {
+	text-align: center;
+}
+
+.Leaderboard-main .u-text--right {
+	text-align: right;
+}
+
+.Leaderboard-main .u-bg--light {
+	background: var(--lightest) !important;
+}
+
+.Leaderboard-main .u-text--light {
+	color: var(--lightest) !important;
+}
+
+.Leaderboard-main .u-bg--primary {
+	background: var(--primary) !important;
+}
+
+.Leaderboard-main .u-text--primary {
+	color: var(--primary) !important;
+}
+
+.Leaderboard-main .u-bg--dark {
+	background: var(--darkest) !important;
+}
+
+.Leaderboard-main .u-text--dark {
+	color: var(--darkest) !important;
+}
+
+.Leaderboard-main .u-bg--transparent {
+	background: transparent !important;
+}
+
+.Leaderboard-main .u-text--transparent {
+	color: transparent !important;
+}
+
+.Leaderboard-main .u-bg--medium {
+	background: var(--medium) !important;
+}
+
+.Leaderboard-main .u-text--medium {
+	color: var(--color5) !important;
+}
+
+.Leaderboard-main .u-bg--yellow {
+	background: var(--color4) !important;
+}
+
+.Leaderboard-main .u-text--yellow {
+	color: var(--color4) !important;
+}
+
+.Leaderboard-main .u-bg--orange {
+	background: var(--color2) !important;
+}
+
+.Leaderboard-main .u-text--orange {
+	color: var(--color2) !important;
+}
+
+.Leaderboard-main .u-bg--teal {
+	background: var(--color3) !important;
+}
+
+.Leaderboard-main .u-text--teal {
+	color: var(--color3) !important;
+}
+
+.Leaderboard-main .u-bg--light-gradient {
+	background: linear-gradient(to top, var(--light), var(--lightest)) !important;
+}
+
+.Leaderboard-main .u-text--light-gradient {
+	color: linear-gradient(to top, var(--light), var(--lightest)) !important;
+}
+
+.Leaderboard-main .u-display--flex {
+	display: flex;
+}
+
+.Leaderboard-main .u-align--center {
+	align-items: center;
+}
+
+.Leaderboard-main .u-justify--center {
+	justify-content: center;
+}
+
+.Leaderboard-main .u-align--flex-end {
+	align-items: flex-end;
+}
+
+.Leaderboard-main .u-justify--flex-end {
+	justify-content: flex-end;
+}
+
+.Leaderboard-main .u-align--flex-start {
+	align-items: flex-start;
+}
+
+.Leaderboard-main .u-justify--flex-start {
+	justify-content: flex-start;
+}
+
+.Leaderboard-main .u-align--space-between {
+	align-items: space-between;
+}
+
+.Leaderboard-main .u-justify--space-between {
+	justify-content: space-between;
+}
+
+.Leaderboard-main .u-text--small {
+	font-size: 0.8em;
+}
+
+.Leaderboard-main .u-pl--2 {
+	padding-left: 0.2em;
+}
+
+.Leaderboard-main .u-ml--2 {
+	margin-left: 0.2em;
+}
+
+.Leaderboard-main .u-pr--2 {
+	padding-right: 0.2em;
+}
+
+.Leaderboard-main .u-mr--2 {
+	margin-right: 0.2em;
+}
+
+.Leaderboard-main .u-pb--2 {
+	padding-bottom: 0.2em;
+}
+
+.Leaderboard-main .u-mb--2 {
+	margin-bottom: 0.2em;
+}
+
+.Leaderboard-main .u-pt--2 {
+	padding-top: 0.2em;
+}
+
+.Leaderboard-main .u-mt--2 {
+	margin-top: 0.2em;
+}
+
+.Leaderboard-main .u-pl--4 {
+	padding-left: 0.4em;
+}
+
+.Leaderboard-main .u-ml--4 {
+	margin-left: 0.4em;
+}
+
+.Leaderboard-main .u-pr--4 {
+	padding-right: 0.4em;
+}
+
+.Leaderboard-main .u-mr--4 {
+	margin-right: 0.4em;
+}
+
+.Leaderboard-main .u-pb--4 {
+	padding-bottom: 0.4em;
+}
+
+.Leaderboard-main .u-mb--4 {
+	margin-bottom: 0.4em;
+}
+
+.Leaderboard-main .u-pt--4 {
+	padding-top: 0.4em;
+}
+
+.Leaderboard-main .u-mt--4 {
+	margin-top: 0.4em;
+}
+
+.Leaderboard-main .u-pl--8 {
+	padding-left: 0.8em;
+}
+
+.Leaderboard-main .u-ml--8 {
+	margin-left: 0.8em;
+}
+
+.Leaderboard-main .u-pr--8 {
+	padding-right: 0.8em;
+}
+
+.Leaderboard-main .u-mr--8 {
+	margin-right: 0.8em;
+}
+
+.Leaderboard-main .u-pb--8 {
+	padding-bottom: 0.8em;
+}
+
+.Leaderboard-main .u-mb--8 {
+	margin-bottom: 0.8em;
+}
+
+.Leaderboard-main .u-pt--8 {
+	padding-top: 0.8em;
+}
+
+.Leaderboard-main .u-mt--8 {
+	margin-top: 0.8em;
+}
+
+.Leaderboard-main .u-pl--16 {
+	padding-left: 1.6em;
+}
+
+.Leaderboard-main .u-ml--16 {
+	margin-left: 1.6em;
+}
+
+.Leaderboard-main .u-pr--16 {
+	padding-right: 1.6em;
+}
+
+.Leaderboard-main .u-mr--16 {
+	margin-right: 1.6em;
+}
+
+.Leaderboard-main .u-pb--16 {
+	padding-bottom: 1.6em;
+}
+
+.Leaderboard-main .u-mb--16 {
+	margin-bottom: 1.6em;
+}
+
+.Leaderboard-main .u-pt--16 {
+	padding-top: 1.6em;
+}
+
+.Leaderboard-main .u-mt--16 {
+	margin-top: 1.6em;
+}
+
+.Leaderboard-main .u-pl--24 {
+	padding-left: 2.4em;
+}
+
+.Leaderboard-main .u-ml--24 {
+	margin-left: 2.4em;
+}
+
+.Leaderboard-main .u-pr--24 {
+	padding-right: 2.4em;
+}
+
+.Leaderboard-main .u-mr--24 {
+	margin-right: 2.4em;
+}
+
+.Leaderboard-main .u-pb--24 {
+	padding-bottom: 2.4em;
+}
+
+.Leaderboard-main .u-mb--24 {
+	margin-bottom: 2.4em;
+}
+
+.Leaderboard-main .u-pt--24 {
+	padding-top: 2.4em;
+}
+
+.Leaderboard-main .u-mt--24 {
+	margin-top: 2.4em;
+}
+
+.Leaderboard-main .u-pl--32 {
+	padding-left: 3.2em;
+}
+
+.Leaderboard-main .u-ml--32 {
+	margin-left: 3.2em;
+}
+
+.Leaderboard-main .u-pr--32 {
+	padding-right: 3.2em;
+}
+
+.Leaderboard-main .u-mr--32 {
+	margin-right: 3.2em;
+}
+
+.Leaderboard-main .u-pb--32 {
+	padding-bottom: 3.2em;
+}
+
+.Leaderboard-main .u-mb--32 {
+	margin-bottom: 3.2em;
+}
+
+.Leaderboard-main .u-pt--32 {
+	padding-top: 3.2em;
+}
+
+.Leaderboard-main .u-mt--32 {
+	margin-top: 3.2em;
+}

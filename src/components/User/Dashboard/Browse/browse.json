@@ -1,0 +1,20 @@
+{
+    "buttons": {
+        "createCourse": "Create a new course",
+        "exploreByTopics": "Explore by Topics",
+        "exploreByClass": "Explore by Classes",
+        "exploreAllCourses": "Explore All Courses",
+        "createdByMe": "Created by me"
+    },
+    "api": {
+        "getMoreCourses": "get_more_courses",
+        "getCourses": "get_courses",
+        "getTopics": "get_next_level_topics",
+        "userCourses": "get_user_created_courses",
+        "courseBreadcrumbs": "get_course_breadcrumbs",
+        "courseOrdering": "change_course_ordering"
+    },
+    "images": {
+        "addIcon": "plus-circle-purple.svg"
+    }
+}

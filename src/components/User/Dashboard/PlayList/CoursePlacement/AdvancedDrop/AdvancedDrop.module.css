@@ -1,0 +1,138 @@
+.smallDrop {
+  display: none;
+}
+
+.smallClose {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #6646e7;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.smallClose > img {
+  filter: invert(1);
+}
+
+.content {
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.back {
+  padding: 7px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.primary_btn {
+  padding: 7px 15px;
+  color: white;
+  background-color: var(--color1);
+  border-radius: 8px;
+}
+
+.parentEle {
+  padding: 7px 10px;
+  margin: 10px 0;
+}
+
+.back > img {
+  transform: rotate(90deg);
+}
+
+.childDrop,
+.parentDrop {
+  border-bottom: 1px solid #e2e2e2;
+  padding: 7px 10px;
+}
+
+.parentDrop {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.parentDrop > img {
+  transform: rotate(-90deg);
+}
+
+.dropContainer {
+  position: fixed;
+  top: 45px;
+  width: 100%;
+  left: 100vw;
+}
+
+.scrollContainer {
+  height: calc(100vh - 45px);
+  overflow-x: auto;
+}
+
+.toLeftIn {
+  animation: rightToLeftIn 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.toLeftOut {
+  animation: rightToLeftOut 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.toRightIn {
+  animation: leftToRightIn 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.toRightOut {
+  animation: leftToRightOut 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+@keyframes leftToRightOut {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+
+@keyframes leftToRightIn {
+  0% {
+    left: -100vw;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes rightToLeftOut {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100vw;
+  }
+}
+
+@keyframes rightToLeftIn {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .bigDrop {
+    display: none;
+  }
+
+  .smallDrop {
+    display: unset;
+  }
+}

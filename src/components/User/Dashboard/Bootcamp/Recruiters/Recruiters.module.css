@@ -1,0 +1,14 @@
+.root {
+  width: 100%;
+  min-width: 90vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.heading {
+  font-weight: 500 !important;
+  font-size: 30px !important;
+  line-height: 120% !important;
+  text-align: center !important;
+  color: #000000 !important;
+}

@@ -1,0 +1,101 @@
+[
+    {
+        "question": "What is the colour of Duck's blood?",
+        "options": [
+            "red",
+            "yellow",
+            "blue",
+            "purple"
+        ],
+        "correctAnswer": "red",
+        "imgURL": "https://i.imgur.com/BU9SrUR.png"
+    },
+    {
+        "question": "How many hearts does an Earth worm have?",
+        "options": [
+            "5",
+            "4",
+            "3",
+            "2"
+        ],
+        "correctAnswer": "5",
+        "imgURL": "https://i.imgur.com/MaVJSNr.png"
+    },
+    {
+        "question": "Which organ do Labsters not have?",
+        "options": [
+            "brain",
+            "heart",
+            "stomach",
+            "chest"
+        ],
+        "correctAnswer": "brain",
+        "imgURL": "https://i.imgur.com/y8s41ib.png"
+    },
+    {
+        "question": "What is the sweat colour of a Hippo?",
+        "options": [
+            "pink",
+            "red",
+            "blue",
+            "purple"
+        ],
+        "correctAnswer": "pink",
+        "imgURL": "https://i.imgur.com/HfqO9js.png"
+    },
+    {
+        "question": "What is the most common eye colour?",
+        "options": [
+            "black",
+            "brown",
+            "blue",
+            "grey"
+        ],
+        "correctAnswer": "brown",
+        "imgURL": "https://i.imgur.com/l9CXa38.png"
+    },
+    {
+        "question": "What is the smallest unit of computer memory?",
+        "options": [
+            "Kilobyte",
+            "Byte",
+            "Bitcoin",
+            "Bit"
+        ],
+        "correctAnswer": "Bit",
+        "imgURL": "https://i.imgur.com/W6P4FQ0.jpeg"
+    },
+    {
+        "question": "What was the original name of Twitter?",
+        "options": [
+            "Twitter",
+            "Blue Bird",
+            "Twttr",
+            "Tweet"
+        ],
+        "correctAnswer": "Twttr",
+        "imgURL": "https://i.imgur.com/7tVYAeF.png"
+    },
+    {
+        "question": "What is the symbol for potassium?",
+        "options": [
+            "K",
+            "P",
+            "M",
+            "G"
+        ],
+        "correctAnswer": "K",
+        "imgURL": "https://i.imgur.com/SuJGywT.jpeg"
+    },
+    {
+        "question": "What is the name of Batman’s butler?",
+        "options": [
+            "Bruce Wayne",
+            "Barbara Gordon",
+            "Dick Grayson",
+            "Alfred Pennyworth"
+        ],
+        "correctAnswer": "Alfred Pennyworth",
+        "imgURL": "https://i.imgur.com/lqD5DwX.jpeg"
+    }
+]

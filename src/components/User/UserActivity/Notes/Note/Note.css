@@ -1,0 +1,58 @@
+.note_container {
+  margin: 15px 0;
+}
+
+.note_flex {
+  display: flex;
+  align-items: center;
+}
+
+.align_top {
+  align-items: flex-start;
+}
+
+.note_time {
+  background-color: #6646e7;
+  color: #fff;
+  border-radius: 16px;
+  font-size: 16px;
+  padding: 0 12px;
+  margin-right: 20px;
+}
+
+.note_text {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.note_text > span {
+  color: #686868;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.vote_container {
+  margin-bottom: 20px;
+}
+
+.vote_container > img {
+  cursor: pointer;
+}
+
+.vote_container > p {
+  margin: 0 20px;
+  color: #afadad;
+}
+
+.details {
+  color: #686868;
+  font-size: 14px;
+}
+
+.note_dot {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: #686868;
+  margin: 0 14px;
+}

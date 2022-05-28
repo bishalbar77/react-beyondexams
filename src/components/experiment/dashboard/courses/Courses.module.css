@@ -1,0 +1,118 @@
+.courses {
+    margin-bottom: 100px;
+}
+
+.coursesLearning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.coursesLearning > h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.coursesLearning > h3 > span {
+    color: #6646E7;
+}
+
+.coursesLearning > p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #545454;
+}
+
+.coursesCatagory {
+    text-align: center;
+}
+
+.coursesCatagory > h4 {
+    font-size: 15px;
+}
+
+.category {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 45px;
+}
+
+.category > p {
+    font-size: 14px;
+    color: #A6A6A6;
+    cursor: pointer;
+}
+
+.courseCard {
+    /* display: flex;
+    padding: 0px 25px; */
+    margin: 0px 6px;
+    display: grid;
+    overflow-x: auto;
+    column-gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(200px, 1fr);
+}
+
+.coursesHeading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.myCourses {
+    display: flex;
+    align-items: center;
+}
+
+.myCourses > p {
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #6646E7;
+}
+
+.newCourse {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.newCourse > p {
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: #6646E7;
+}
+
+.coursesSuccess {
+    margin: 35px;
+    margin-bottom: 8rem;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #FCFCFC;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.coursesSuccess > img {
+    height: 41px;
+    width: 36px;
+}
+
+.coursesSuccess > p {
+    color: #6646E7;
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 20px;
+}

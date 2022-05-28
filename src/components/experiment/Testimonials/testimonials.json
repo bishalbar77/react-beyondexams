@@ -1,0 +1,23 @@
+{
+  "videoTestimonials": [
+    {
+      "user": "Rohit",
+      "video_url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    },
+    {
+      "user": "Lalit",
+      "video_url": "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+    },
+    {
+      "user": "Khushi",
+      "video_url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+    }
+  ],
+  "imageTestimonials": [
+    "https://i.imgur.com/ErkkVw2.png",
+    "https://i.imgur.com/ErkkVw2.png",
+    "https://i.imgur.com/ErkkVw2.png",
+    "https://i.imgur.com/ErkkVw2.png",
+    "https://i.imgur.com/ErkkVw2.png"
+  ]
+}

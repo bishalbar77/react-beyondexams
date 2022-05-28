@@ -1,0 +1,111 @@
+{
+    "buttons": {
+        "endorsed": "Endorsed",
+        "endorse": "Endorse",
+        "enrolled": "Enrolled",
+        "enroll": "Enroll",
+        "startCourse": "Start Course",
+        "continue": "Continue watching",
+        "addProject": "Add Project",
+        "viewProject": "View Projects",
+        "getInTouch": "Get in touch",
+        "share": "Share",
+        "chat": "Start Chat",
+        "refer": "Start Referring",
+        "whatsapp": "Whatsapp Us"
+    },
+    "dialog": {
+        "greet": "Congratulations!",
+        "CourseCompleted": "You have sucessfully completed",
+        "viewCertificate": "View your certificate",
+
+        "addModule": "Add New Module",
+        "moduleTitle": "Module Title",
+        "actions": {
+            "cancel": "Cancel",
+            "submit": "Submit"
+        },
+        "benefits": "Benefits of enrollment",
+        "cerfificate": "Shareable certificates",
+        "getCertificate": "Get a shareable certificate after the completion of every course and show it to the world",
+        "progress": "Progress track",
+        "trackProgress": "Track your progress throughout the learning journey",
+        "beSpecial": "Beyond Exam special",
+        "info": "How to complete a course"
+        
+    },
+    "modal": {
+        "editCourse": "Edit Course",
+        "CourseCompleted": "Upload a thumbnail",
+        "upload": "Upload",
+        "info": "Learn how to create meaningful courses"
+    },
+    "section" : {
+        "careerChoice": {
+            "title": "Want to know if this is the right career choice for you?",
+            "description": "Get in touch with us for instant career advice!",
+            "info": "How to complete a course?"
+        },
+        "finalStep": {
+            "title": "Final Step : Hands on projects",
+            "description": "Learning is more than just watching videos or scoring marks. Do a project to make sure you can implement what you have learnt!"
+        },
+        "stillQueries": {
+            "title": "Still have queries ?",
+            "description": "Connect with us on whatsapp, let us help you on your carrier path."
+        },
+        "certificate": {
+            "title": "Stand Out with BE’s Certificate",
+            "descLine1": "Complete all the modules successfully to obtain this certificate of recognition.",
+            "descLine2": "✓ BE’s certificates serve as a testament to the knowledge & skills you have gained.",
+            "descLine3": "✓ Increase your credibility by adding it to your resume and sharing it with your LinkedIn network.(you need to complete all the modules successfully to obtain this certificate of recognition)"
+        },
+        "referFriends": {
+            "title": "Refer Your Friends To Us!",
+            "description": "Share your love for BeyondExams and Unlock Huge Rewards for you and your friends."
+        },
+        "syllabus": {
+            "title": "Syllabus",
+            "description": "Best course content delivered by leading faculty and industry experts in the form of On-Demand Videos and Projects."
+        }
+    },
+    "testimonial" : {
+        "head1": "Trusted by",
+        "head2": "Thousands",
+        "head3": "of Happy Students",
+        "stories": "These are the stories of our students who have joined us with great pleasure when using Beyond exams."
+    },
+    "images": {
+        "careerChoice": "Untitled-13.png",
+        "finalStep": "Untitled-14.png",
+        "whatsapp": "whatsapp.png",
+        "info": "alert-circle.svg",
+        "benefitOpenBG": "benefitOpenBG.png",
+        "delete": "deleteIcon.png",
+        "certificate": "certi.png",
+        "plusCircle": "plus_circle.png",
+        "profileUpload": "profile-upload.png",
+        "arrow": "solid-bottom-arrow.svg",
+        "tagClock": "tag_clock.png",
+        "tagLayers": "tag_layers.png",
+        "tagVideos": "tag_videos.png",
+        "xIcon": "x.svg",
+        "benefitBG1": "benefitBG1.png",
+        "benefitBG2": "benefitBG2.png",
+        "benefitBG3": "benefitBG3.png",
+        "courseComplete": "course-complete.svg",
+        "refer": "refer.png"
+    },
+    "api": {
+        "addCatagory": "add_category_enrollment",
+        "catagoryRating": "add_category_rating",
+        "getCourseDetails": "get_final_course_details",
+        "getStreaks": "get_daily_streaks",
+        "removeCatagory": "remove_category",
+        "editCourse": "edit_course",
+        "moveCourse": "move_course",
+        "addModule": "add_new_module",
+        "courseBreadcrumbs": "get_course_breadcrumbs",
+        "topicBreadcrumbs": "get_topic_breadcrumbs"
+    }
+}

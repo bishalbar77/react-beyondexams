@@ -1,0 +1,54 @@
+.irregular-shape {
+  position: fixed;
+  z-index: -1;
+}
+.irregular-shape-1 {
+  bottom: 0;
+  transform: translate(-20%, 50%);
+}
+.irregular-shape-2 {
+  right: 0;
+  transform: translate(20%, -50%);
+}
+
+.empty-layout-upper-bar {
+  padding: 0.5em 1em;
+  display: grid;
+  gap: 0.7em;
+  grid-template-columns: auto 1fr auto auto;
+}
+.empty-layout-logo {
+  height: 35px;
+  width: 35px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.empty-page-logo-text {
+  color: #ae3a62;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.empty-page-logout-btn {
+  height: 32px;
+  width: 100px;
+  text-align: center;
+  background-color: var(--secondaryColor);
+  font-weight: bold;
+  color: #666;
+  border: 1px solid #666;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.empty-page-logout-btn:hover {
+  filter: brightness(0.95);
+}
+.empty-page-logout-btn:active {
+  filter: brightness(0.9);
+}
+@media screen and (max-width: 550px) {
+  .empty-page-logout-btn {
+    display: none !important;
+  }
+}

@@ -1,0 +1,107 @@
+.container{
+    /* min-height: 200px; */
+    /* max-width: 600px; */
+    margin: auto;
+    cursor: pointer;
+}
+
+.reading-container{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr;
+    margin: 1rem 0;
+    font-size: var(--sm);
+}
+
+.reading-user{
+    font-size: var(--sm);
+    color: var(--color4);
+    padding-bottom: 10px;
+}
+
+
+.reading-opt{
+    grid-row: 2/3;
+    grid-column: 3/4;
+    cursor: pointer;
+}
+
+.reading-pdf{
+    grid-column: 2/3;
+    min-height: 100px;
+    max-height: 150px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.reading-pdf .left{
+    display: flex;
+}
+
+.left > .icon-container{
+    height: 100%;
+    max-width: 75px;
+    min-width: 75px;
+    background: var(--lightest);
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.icon-container > img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.icon-container .icon{
+    color: white;
+    font-size: 35px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right h3{
+    font-size: var(--base);
+}
+
+.right > div{
+    display: flex;
+}
+
+.right > div p{
+    padding-right: 10px;
+}
+
+.right-align p{
+    margin-left: auto;
+}
+
+
+@media screen and (max-width: 1080px){
+    .reading-pdf{
+        grid-column: 1/4;
+        margin: 0 10px;
+    }
+
+    .reading-opt{
+        grid-row: 1/2;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .right h3{
+        font-size: var(--sm);
+    }
+
+    .reading-container{
+        font-size: var(--ssm);
+    }
+}

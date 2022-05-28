@@ -1,0 +1,43 @@
+.projectsHeading {
+    display: flex;
+    padding: 15px;
+}
+
+.projectsHeading > p {
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #6646E7;
+}
+
+.card {
+    margin-bottom: 100px;
+}
+
+.cardContainer {
+    /* background-color: lightgray; */
+    /* height: 30vh; */
+    margin: 10px 35px;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+}
+
+.cardTabs {
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.cardTabs .MuiTabs-scroller {
+    color: #6646E7;
+}
+
+.cardTabs .MuiTabs-scroller .MuiTabs-indicator {
+    background-color: #6646E7 !important;
+    /* height: 14px; */
+    /* width: 180px !important; */
+}
+  
+.cardTabs .MuiTabs-scroller .MuiTabs-flexContainer {
+    /* height: 70px; */
+    justify-content: space-evenly;
+    text-transform: lowercase;
+}
