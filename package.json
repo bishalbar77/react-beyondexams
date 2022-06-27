@@ -2,6 +2,7 @@
   "name": "beyondexams",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8000",
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^33.0.0",
     "@ckeditor/ckeditor5-react": "^4.0.0",
@@ -20,6 +21,7 @@
     "chart.js": "^3.7.1",
     "classnames": "^2.3.1",
     "date-fns": "^2.25.0",
+    "dotenv": "^16.0.1",
     "firebase": "^8.6.5",
     "froala-editor": "^4.0.9",
     "iframe-resizer-react": "^1.1.0",
@@ -28,6 +30,7 @@
     "material-ui-nested-menu-item": "^1.0.2",
     "mic-recorder-to-mp3": "^2.2.2",
     "moment": "^2.29.1",
+    "razorpay": "^2.8.1",
     "react": "^16.14.0",
     "react-audio-player": "^0.14.0",
     "react-chartjs-2": "^3.3.0",

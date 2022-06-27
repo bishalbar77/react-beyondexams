@@ -34,6 +34,7 @@ const Simulation = lazy(() => import("./experiment/Simulation/Simulation"));
 const VideoDub = lazy(() => import("./experiment/Video Dub/VideoDub"));
 const Leaderboard = lazy(() => import("./Leaderboard/Leaderboard"));
 const UserCourses = lazy(() => import("./Admin/UserCourses"));
+const HiddenCourses = lazy(() => import("./Admin/HiddenCourses"));
 const YoutubeVideo = lazy(() => import("./Admin/YoutubeVideo"));
 const UserCategory = lazy(() => import("./Admin/UserCategory"));
 
@@ -252,6 +253,9 @@ class LoginNavigation extends Component {
                   </Route>
                   <Route exact path="/dashboard/user-courses">
                     <UserCourses type="student" />
+                  </Route>
+                  <Route exact path="/dashboard/hidden-courses">
+                    <HiddenCourses type="student" />
                   </Route>
                   <Route exact path="/dashboard/user-enrollments">
                     <UserEnrollments type="student" />

@@ -1167,6 +1167,54 @@ function CourseDetail(props) {
     history.push(`/chat/${course.title}/${course.id}`);
     // history.push("/dashboard");
   };
+
+  function loadRazorpay() {
+    const script = document.createElement('script');
+    script.src = 'https://checkout.razorpay.com/v1/checkout.js';
+    script.onerror = () => {
+      alert('Razorpay SDK failed to load. Are you online?');
+    };
+    script.onload = async () => {
+      try {
+        const result = await axios.post('http://localhost:8000/create-order', {
+          amount: '50000',
+        });
+        const { amount, id: order_id, currency } = result.data;
+        const {
+          data: { key: razorpayKey },
+        } = await axios.get('http://localhost:8000/get-razorpay-key');
+
+        const options = {
+          key: razorpayKey,
+          amount: amount.toString(),
+          currency: currency,
+          name: localStorage.getItem("first_name") + " " + localStorage.getItem("last_name"),
+          description: 'Payment for ' + course?.title + " Course",
+          order_id: order_id,
+          handler: async function (response) {
+            alert("Payment Successful!");
+          },
+          prefill: {
+            name: localStorage.getItem("first_name") + " " + localStorage.getItem("last_name"),
+            email: localStorage.getItem("email"),
+            contact: '',
+          },
+          notes: {
+            address: 'Delhi, India',
+          },
+          theme: {
+            color: '#80c0f0',
+          },
+        };
+        const paymentObject = new window.Razorpay(options);
+        paymentObject.open();
+      } catch (err) {
+        alert(err);
+      }
+    };
+    document.body.appendChild(script);
+  }
+
   try {
     return loading ? (
       <div className="loader">
@@ -1471,6 +1519,9 @@ function CourseDetail(props) {
 
               <div className="enrollSection">
                 <div className="enrollSection-btns">
+                  <button onClick={loadRazorpay} className="enrollBtn" style={{ backgroundColor: "#3395ff" }}>
+                    Pay Now
+                  </button>
                   {localStorage.getItem("role_id") === "2" ? (
                     course.user_actions[0]?.pivot?.has_endorsed ? (
                       <button onClick={handleUnEndorse} className="enrollBtn" style={{ backgroundColor: "#77AF44" }}>

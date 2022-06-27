@@ -1,4 +1,5 @@
 const express = require("express");
+const router = require('express').Router();
 const path = require("path");
 const fs = require("fs");
 const fetch = require("node-fetch");
@@ -7,17 +8,35 @@ const https = require("https");
 const socketio = require("socket.io");
 const { userJoin, getCurrentUser, userLeave, getRoomUsers } = require("./utils/users");
 const formatMessage = require("./utils/messages");
+const Razorpay = require('razorpay');
+const dotenv = require('dotenv');
+dotenv.config();
+var cors = require('cors');
+const corsOpts = {
+  origin: '*',
+  methods: [
+    'GET',
+    'POST',
+  ],
 
-const PORT = process.env.PORT || 80;
+  allowedHeaders: [
+    'Content-Type',
+  ],
+};
+
+router.use(cors(corsOpts));
+
+const PORT = process.env.PORT || 8000;
 
 const app = express();
+app.use(cors());
 
-const enforce = require('express-sslify');
+// const enforce = require('express-sslify');
 
 
-app.use(express.static(__dirname, { dotfiles: "allow" }));
-app.use(express.static(path.resolve(__dirname, "..", "build")));
-app.use(enforce.HTTPS({ trustProtoHeader: true }));
+// app.use(express.static(__dirname, { dotfiles: "allow" }));
+// app.use(express.static(path.resolve(__dirname, "..", "build")));
+// app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
 /*
 app.use(function(req, res, next) {
@@ -33,6 +52,39 @@ app.use(function(req, res, next) {
 /*
 });
 */
+app.get('/get-razorpay-key', (req, res) => {
+  res.send({ key: process.env.RAZORPAY_KEY_ID });
+});
+
+app.post('/create-order', async (req, res) => {
+  
+  const razorpay = new Razorpay({
+    key_id: process.env.RAZORPAY_KEY_ID,
+    key_secret: process.env.RAZORPAY_SECRET,
+  });
+  const payment_capture = 1;
+  const amount = 500;
+  const currency = "INR";
+
+  const options = {
+    amount: amount * 100,
+    currency,
+    receipt: 'WDD85W552',
+    payment_capture,
+  };
+
+  try {
+    const response = await razorpay.orders.create(options);
+    console.log(response);
+    res.json({
+      id: response.id,
+      currency: response.currency,
+      amount: response.amount,
+    });
+  } catch (error) {
+    console.log(error);
+  }
+});
 
 app.get("/dashboard/course/:slug", async (req, res) => {
   const filePath = path.resolve(__dirname, "..", "build", "index.html");
@@ -102,79 +154,82 @@ app.get("/*", async (req, res) => {
   });
 });
 
-const privateKey1 = fs.readFileSync("/var/www/html/privkey_new.pem", "utf8");
-const certificate1 = fs.readFileSync("/var/www/html/cert_new.pem", "utf8");
-const ca1 = fs.readFileSync("/var/www/html/chain_new.pem", "utf8");
-const credentials = {
-  key: privateKey1,
-  cert: certificate1,
-  ca: ca1,
-};
+// const privateKey1 = fs.readFileSync("/var/www/html/privkey_new.pem", "utf8");
+// const certificate1 = fs.readFileSync("/var/www/html/cert_new.pem", "utf8");
+// const ca1 = fs.readFileSync("/var/www/html/chain_new.pem", "utf8");
+// const credentials = {
+//   key: privateKey1,
+//   cert: certificate1,
+//   ca: ca1,
+// };
 
-const httpServer = http.createServer(app);
-const httpsServer = https.createServer(credentials, app);
+// const httpServer = http.createServer(app);
 
-const io = socketio(httpsServer);
-io.on("connection", (socket) => {
-  socket.on("joinRoom", ({ username, room }) => {
-    const user = userJoin(socket.id, username, room);
+// const io = socketio(httpsServer);
+// io.on("connection", (socket) => {
+//   socket.on("joinRoom", ({ username, room }) => {
+//     const user = userJoin(socket.id, username, room);
 
-    socket.join(user.room);
+//     socket.join(user.room);
 
-    // Welcome current user
-    // socket.emit("message", formatMessage("BOT", "Welcome!"));
+//     // Welcome current user
+//     // socket.emit("message", formatMessage("BOT", "Welcome!"));
 
-    // Broadcast when a user connects
-    // socket.broadcast.to(user.room).emit("message", formatMessage("BOT", `${user.username} has joined the chat`));
+//     // Broadcast when a user connects
+//     // socket.broadcast.to(user.room).emit("message", formatMessage("BOT", `${user.username} has joined the chat`));
 
-    // Send users and room info
-    // io.to(user.room).emit("roomUsers", {
-    //   room: user.room,
-    //   users: getRoomUsers(user.room),
-    // });
-  });
+//     // Send users and room info
+//     // io.to(user.room).emit("roomUsers", {
+//     //   room: user.room,
+//     //   users: getRoomUsers(user.room),
+//     // });
+//   });
 
-  // Listen for chatMessage
-  socket.on("chatMessage", (data) => {
-    // const user = getCurrentUser(socket.id);
-    // let msgData = {};
-    // msgData.message = data.message;
-    io.to(data.room).emit("message", data);
-  });
-  socket.on("leave", () => {
-    const user = userLeave(socket.id);
+//   // Listen for chatMessage
+//   socket.on("chatMessage", (data) => {
+//     // const user = getCurrentUser(socket.id);
+//     // let msgData = {};
+//     // msgData.message = data.message;
+//     io.to(data.room).emit("message", data);
+//   });
+//   socket.on("leave", () => {
+//     const user = userLeave(socket.id);
 
-    // if (user) {
-    //   io.to(user.room).emit("message", formatMessage("BOT", `${user.username} has left the chat`));
+//     // if (user) {
+//     //   io.to(user.room).emit("message", formatMessage("BOT", `${user.username} has left the chat`));
 
-    // Send users and room info
-    // io.to(user.room).emit("roomUsers", {
-    //   room: user.room,
-    //   users: getRoomUsers(user.room),
-    // });
-    // }
-  });
+//     // Send users and room info
+//     // io.to(user.room).emit("roomUsers", {
+//     //   room: user.room,
+//     //   users: getRoomUsers(user.room),
+//     // });
+//     // }
+//   });
 
-  // Runs when client disconnects
-  socket.on("disconnect", () => {
-    userLeave(socket.id);
+//   // Runs when client disconnects
+//   socket.on("disconnect", () => {
+//     userLeave(socket.id);
 
-    // if (user) {
-    //   io.to(user.room).emit("message", formatMessage("BOT", `${user.username} has left the chat`));
+//     // if (user) {
+//     //   io.to(user.room).emit("message", formatMessage("BOT", `${user.username} has left the chat`));
 
-    // Send users and room info
-    // io.to(user.room).emit("roomUsers", {
-    //   room: user.room,
-    //   users: getRoomUsers(user.room),
-    // });
-    // }
-  });
-});
+//     // Send users and room info
+//     // io.to(user.room).emit("roomUsers", {
+//     //   room: user.room,
+//     //   users: getRoomUsers(user.room),
+//     // });
+//     // }
+//   });
+// });
 
-httpServer.listen(PORT, () => {
-  console.log("HTTP Server running on port 80");
-});
+// httpServer.listen(PORT, () => {
+//   console.log("HTTP Server running on port 80");
+// });
 
-httpsServer.listen(443, () => {
-  console.log("HTTPS Server running on port 443");
-});
+// httpsServer.listen(443, () => {
+//   console.log("HTTPS Server running on port 443");
+// });
+
+app.listen(PORT, () =>
+  console.log(`server started on http://localhost:${PORT}`)
+);
