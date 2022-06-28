@@ -91,8 +91,8 @@ function ListUnit({
             <div className="c-media__title">{name}</div>
             <Link
               to={{
-                pathname: `/dashboard/course/${slug}`,
-              }}
+                pathname: `https://beyondexams.org/dashboard/course/${slug}`,
+              }} target="_blank"
               className="c-media__link u-text--small"
             >
               {/* <a
@@ -110,8 +110,8 @@ function ListUnit({
           <div className="c-media__content">
             <Link
               to={{
-                pathname: `/dashboard/profile/${creator_slug}`,
-              }}
+                pathname: `https://beyondexams.org/dashboard/profile/${creator_slug}`,
+              }}  target="_blank"
               className="c-media__link u-text--small"
             >
               {/* <a
